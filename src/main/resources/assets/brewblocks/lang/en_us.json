@@ -1,0 +1,7 @@
+{
+  "itemGroup.brewblocks" : "Brewer's Blocks",
+  "block.brewblocks.sticky_ore" : "Sticky Ore",
+  "block.brewblocks.flax_plant" : "Flax Crop",
+  "block.brewblocks.flax_plant_wild" : "Wild Flax Plant",
+  "item.brewblocks.flax_seed" : "Flax Seed"
+}

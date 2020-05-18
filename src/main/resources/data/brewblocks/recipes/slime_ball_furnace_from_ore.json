@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "brewblocks:sticky_ore"
+  },
+  "result": {
+    "item": "minecraft:slime_ball",
+    "count": 2
+  },
+  "experience": 0.7,
+  "cookingtime": 150
+}
