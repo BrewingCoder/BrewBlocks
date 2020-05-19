@@ -72,7 +72,17 @@ repositories {
 
 dependencies {
     minecraft 'net.minecraftforge:forge:1.15.2-31.2.0'
-    compile fg.deobf("com.brewingcoder:BrewTeamLib:1.0.5")
+    compileOnly fg.deobf("mezz.jei:jei-1.15.2:6.0.0.2:api")
+    runtimeOnly fg.deobf("mezz.jei:jei-1.15.2:6.0.0.2")
+    compile fg.deobf("com.brewingcoder:BrewTeamLib:1.0.8")
+
+    compileOnly fg.deobf("mcjty.theoneprobe:TheOneProbe-1.15:${top_version}:api")
+    runtimeOnly fg.deobf("mcjty.theoneprobe:TheOneProbe-1.15:${top_version}")
+
+    compile fg.deobf("com.blamejared.crafttweaker:CraftTweaker-1.15.1:${crafttweaker_version}")
+    runtime fg.deobf(project.dependencies.create("curse.maven:mekanism:2938498") {
+        transitive = false
+    })
 }
 
 

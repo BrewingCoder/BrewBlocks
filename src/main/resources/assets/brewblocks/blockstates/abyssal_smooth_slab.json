@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "type=bottom": { "model": "brewblocks:block/abyssal_smooth_slab" },
+    "type=top": { "model": "brewblocks:block/abyssal_smooth_slab_top" },
+    "type=double": { "model": "brewblocks:block/abyssal_smooth" }
+  }
+}

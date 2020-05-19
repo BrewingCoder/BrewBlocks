@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "brewblocks:abyssal"
+  },
+  "result": {
+    "item": "brewblocks:abyssal_smooth"
+  },
+  "experience": 0.7,
+  "cookingtime": 150
+}

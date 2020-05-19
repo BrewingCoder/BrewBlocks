@@ -1,0 +1,8 @@
+{
+  "parent": "block/outer_stairs",
+  "textures": {
+    "bottom": "brewblocks:block/abyssal",
+    "top": "brewblocks:block/abyssal",
+    "side": "brewblocks:block/abyssal"
+  }
+}

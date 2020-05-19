@@ -1,0 +1,17 @@
+{
+  "type" : "minecraft:crafting_shaped",
+  "pattern": [
+    "b  ",
+    "bb ",
+    "bbb"
+  ],
+  "key" : {
+    "b" : {
+      "item" : "brewblocks:abyssal_smooth"
+    }
+  },
+  "result" : {
+    "item" : "brewblocks:abyssal_smooth_stairs",
+    "count" : 4
+  }
+}

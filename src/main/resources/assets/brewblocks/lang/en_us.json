@@ -1,7 +1,42 @@
 {
-  "itemGroup.brewblocks" : "Brewer's Blocks",
+  "itemGroup.brewblocks" : "Brewers Blocks",
+
   "block.brewblocks.sticky_ore" : "Sticky Ore",
   "block.brewblocks.flax_plant" : "Flax Crop",
+  "block.brewblocks.abyssal" : "Abyssal",
+
+  "block.brewblocks.abyssal_bricks" : "Abyssal Bricks",
+  "block.brewblocks.abyssal_bricks_cracked" : "Cracked Abyssal Bricks",
+  "block.brewblocks.abyssal_cobble" : "Abyssal Cobblestone",
+  "block.brewblocks.abyssal_smooth" : "Smooth Abyssal",
+
+  "block.brewblocks.abyssal_stairs" : "Abyssal Stairs",
+  "block.brewblocks.abyssal_brick_stairs" : "Abyssal Brick Stairs",
+  "block.brewblocks.abyssal_brick_cracked_stairs" : "Cracked Abyssal Brick Stairs",
+  "block.brewblocks.abyssal_cobble_stairs" : "Abyssal Cobblestone Stairs",
+  "block.brewblocks.abyssal_smooth_stairs" : "Smooth Abyssal Stairs",
+
+  "block.brewblocks.abyssal_slab" : "Abyssal Slab",
+  "block.brewblocks.abyssal_brick_slab" : "Abyssal Brick Slab",
+  "block.brewblocks.abyssal_brick_cracked_slab" : "Cracked Abyssal Brick Slab",
+  "block.brewblocks.abyssal_cobble_slab" : "Abyssal Cobblestone Slab",
+  "block.brewblocks.abyssal_smooth_slab" : "Smooth Abyssal Slab",
+
+  "block.brewblocks.abyssal_wall" : "Abyssal Wall",
+  "block.brewblocks.abyssal_brick_wall": "Abyssal Brick Wall",
+  "block.brewblocks.abyssal_brick_cracked_wall" : "Cracked Abyssal Brick Wall",
+  "block.brewblocks.abyssal_cobble_wall" : "Abyssal Cobblestone Wall",
+  "block.brewblocks.abyssal_smooth_wall" : "Smooth Abyssal Wall",
+
+  "block.brewblocks.abyssal_pillar" : "Abyssal Pillar",
+  "block.brewblocks.abyssal_brick_pillar" : "Abyssal Brick Pillar",
+  "block.brewblocks.abyssal_brick_cracked_pillar" : "Cracked Abyssal Brick Pillar",
+  "block.brewblocks.abyssal_cobble_pillar" : "Abyssal Cobblestone Pillar",
+  "block.brewblocks.abyssal_smooth_pillar" : "Smooth Abyssal Pillar",
+
+
   "block.brewblocks.flax_plant_wild" : "Wild Flax Plant",
+
+
   "item.brewblocks.flax_seed" : "Flax Seed"
 }

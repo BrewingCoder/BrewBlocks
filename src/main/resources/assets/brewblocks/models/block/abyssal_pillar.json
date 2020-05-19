@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_column",
+    "textures": {
+        "end": "brewblocks:block/abyssal",
+        "side": "brewblocks:block/abyssal"
+    }
+}

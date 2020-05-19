@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "axis=y":  { "model": "brewblocks:block/abyssal_pillar" },
+    "axis=z":   { "model": "brewblocks:block/abyssal_pillar", "x": 90 },
+    "axis=x":   { "model": "brewblocks:block/abyssal_pillar", "x": 90, "y": 90 }
+  }
+}

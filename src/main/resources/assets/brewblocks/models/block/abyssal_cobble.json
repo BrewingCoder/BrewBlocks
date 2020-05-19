@@ -1,0 +1,5 @@
+{
+  "parent" : "block/cube_all",
+  "textures" : {
+      "all" : "brewblocks:block/abyssal_cobble"}
+}

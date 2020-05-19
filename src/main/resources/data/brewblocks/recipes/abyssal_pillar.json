@@ -1,0 +1,8 @@
+{
+    "type" : "minecraft:stonecutting",
+    "ingredient": {
+        "item" : "brewblocks:abyssal"
+    },
+    "result" : "brewblocks:abyssal_pillar",
+    "count" : 1
+}

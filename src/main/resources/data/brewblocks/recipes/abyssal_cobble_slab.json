@@ -1,0 +1,15 @@
+{
+  "type" : "minecraft:crafting_shaped",
+  "pattern": [
+    "bbb"
+  ],
+  "key" : {
+    "b" : {
+      "item" : "brewblocks:abyssal_cobble"
+    }
+  },
+  "result" : {
+    "item" : "brewblocks:abyssal_cobble_slab",
+    "count" : 6
+  }
+}

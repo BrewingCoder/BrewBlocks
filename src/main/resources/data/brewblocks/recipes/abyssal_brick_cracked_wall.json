@@ -1,0 +1,17 @@
+{
+  "type" : "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "bbb",
+    "bbb"
+  ],
+  "key" : {
+    "b" : {
+      "item" : "brewblocks:abyssal_bricks_cracked"
+    }
+  },
+  "result" : {
+    "item" : "brewblocks:abyssal_brick_cracked_wall",
+    "count" : 6
+  }
+}

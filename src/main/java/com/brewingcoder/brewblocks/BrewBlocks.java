@@ -1,5 +1,7 @@
 package com.brewingcoder.brewblocks;
 
+import com.brewingcoder.brewblocks.config.Configs;
+import com.brewingcoder.brewblocks.world.IFeatures;
 import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
@@ -19,10 +21,11 @@ public class BrewBlocks
     public BrewBlocks() {
         addModListener(this::commonSetup);
         addModListener(this::clientSetup);
+        Configs.register();
     }
 
      void commonSetup(final FMLCommonSetupEvent event) {
-        //IFeatures.register();
+        IFeatures.register();
     }
 
     void clientSetup(final FMLClientSetupEvent event) {
