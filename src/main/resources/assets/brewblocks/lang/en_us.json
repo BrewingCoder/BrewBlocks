@@ -38,5 +38,6 @@
   "block.brewblocks.flax_plant_wild" : "Wild Flax Plant",
 
 
-  "item.brewblocks.flax_seed" : "Flax Seed"
+  "item.brewblocks.flax_seed" : "Flax Seed",
+  "item.brewblocks.goggles" : "Night Vision Goggles"
 }

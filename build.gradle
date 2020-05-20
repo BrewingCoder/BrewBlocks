@@ -19,6 +19,7 @@ apply plugin: 'com.matthewprenger.cursegradle'
 
 version = mod_version
 group = mod_group
+
 archivesBaseName = mod_name
 sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '1.8' // Need this here so eclipse task generates correctly.
 
@@ -50,6 +51,7 @@ minecraft {
             workingDirectory project.file('run')
             property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
             property 'forge.logging.console.level', 'debug'
+            //noinspection GroovyAssignabilityCheck
             args '--mod', 'brewblocks', '--all', '--output', file('src/generated/resources/')
             mods {
                 brewblocks {

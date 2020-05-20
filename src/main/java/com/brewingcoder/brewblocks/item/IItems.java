@@ -1,6 +1,7 @@
 package com.brewingcoder.brewblocks.item;
 
 import com.brewingcoder.brewblocks.block.IBlocks;
+import com.brewingcoder.brewblocks.material.ModArmorMaterial;
 import com.brewingcoder.brewteamlib.item.SeedItemBase;
 import net.minecraft.item.Item;
 import net.minecraftforge.event.RegistryEvent;
@@ -16,6 +17,7 @@ public class IItems {
     public static final List<Item> ITEMS = new ArrayList<>(IBlocks.BLOCK_ITEMS);
 
     public static final Item FLAX_SEED = register("flax_seed", new SeedItemBase(IBlocks.FLAX_PLANT,(new Item.Properties().group(ItemGroups.MAIN))));
+    public static final Item NIGHT_VISION_GOGGLES = register("goggles", new NightVisionGogglesItem(ModArmorMaterial.GOOGLES,(new Item.Properties().group(ItemGroups.MAIN))));
 
     static <T extends net.minecraft.item.Item> T register(final String name, final T item) {
         item.setRegistryName(name);
