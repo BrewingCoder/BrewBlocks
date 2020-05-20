@@ -18,6 +18,7 @@ public class IItems {
 
     public static final Item FLAX_SEED = register("flax_seed", new SeedItemBase(IBlocks.FLAX_PLANT,(new Item.Properties().group(ItemGroups.MAIN))));
     public static final Item NIGHT_VISION_GOGGLES = register("goggles", new NightVisionGogglesItem(ModArmorMaterial.GOOGLES,(new Item.Properties().group(ItemGroups.MAIN))));
+    public static final Item SLIME_BOUNCE_BOOTS = register("slime_bounce_boots", new SlimeBounceBootsItem(ModArmorMaterial.SLIME,(new Item.Properties().group(ItemGroups.MAIN))));
 
     static <T extends net.minecraft.item.Item> T register(final String name, final T item) {
         item.setRegistryName(name);

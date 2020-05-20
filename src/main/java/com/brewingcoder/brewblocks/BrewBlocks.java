@@ -1,6 +1,7 @@
 package com.brewingcoder.brewblocks;
 
 import com.brewingcoder.brewblocks.config.Configs;
+import com.brewingcoder.brewblocks.item.SlimeBounceBootsItem;
 import com.brewingcoder.brewblocks.world.IFeatures;
 import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.fml.common.Mod;
@@ -9,6 +10,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import static com.brewingcoder.brewteamlib.BrewTeamLib.addEventListener;
 import static com.brewingcoder.brewteamlib.BrewTeamLib.addModListener;
 
 @SuppressWarnings("unused")
@@ -21,6 +23,8 @@ public class BrewBlocks
     public BrewBlocks() {
         addModListener(this::commonSetup);
         addModListener(this::clientSetup);
+        addEventListener(SlimeBounceBootsItem::onLivingFall);
+
         Configs.register();
     }
 

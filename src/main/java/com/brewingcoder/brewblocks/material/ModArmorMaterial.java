@@ -7,10 +7,12 @@ import net.minecraft.util.SoundEvent;
 import net.minecraft.util.SoundEvents;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.common.Tags;
 
 public enum ModArmorMaterial implements IArmorMaterial {
 
-    GOOGLES("brewblocks:googles", -1, new int[] { 1, 1, 1, 1 }, 15, SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 1.0F, Ingredient.EMPTY );
+    GOOGLES("brewblocks:googles", -1, new int[] {1,1,1,1}, 0, SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 1.0F, Ingredient.EMPTY ),
+    SLIME("brewblocks:slime",400, new int[] {0,0,0,0}, 0, SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 1.0F, Ingredient.fromTag(Tags.Items.SLIMEBALLS));
 
     private static final int[] MAX_DAMAGE_ARRAY = new int[] { 13, 15, 16, 11 };
     private final String name;

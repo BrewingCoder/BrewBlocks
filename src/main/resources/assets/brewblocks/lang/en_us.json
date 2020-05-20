@@ -39,5 +39,6 @@
 
 
   "item.brewblocks.flax_seed" : "Flax Seed",
-  "item.brewblocks.goggles" : "Night Vision Goggles"
+  "item.brewblocks.goggles" : "Night Vision Goggles",
+  "item.brewblocks.slime_bounce_boots" : "Slime-y-boots"
 }

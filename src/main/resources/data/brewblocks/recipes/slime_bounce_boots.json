@@ -1,0 +1,17 @@
+{
+  "type" : "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "s s",
+    "s s"
+  ],
+  "key" : {
+    "s" : {
+      "tag" : "forge:slimeballs"
+    }
+  },
+  "result" : {
+    "item" : "brewblocks:slime_bounce_boots",
+    "count" : 1
+  }
+}
