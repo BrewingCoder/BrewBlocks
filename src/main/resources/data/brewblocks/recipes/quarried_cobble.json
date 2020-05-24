@@ -1,0 +1,11 @@
+{
+  "type" : "crafting_shapeless",
+  "ingredients" : [
+    {
+      "item" : "brewblocks:quarried"
+    }
+  ],
+  "result" : {
+    "item" : "brewblocks:quarried_cobble"
+  }
+}

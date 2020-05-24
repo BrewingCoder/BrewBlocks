@@ -28,7 +28,7 @@ public class BrewBlocks
         Configs.register();
     }
 
-     void commonSetup(final FMLCommonSetupEvent event) {
+    void commonSetup(final FMLCommonSetupEvent event) {
         IFeatures.register();
     }
 

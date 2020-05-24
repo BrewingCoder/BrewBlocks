@@ -25,7 +25,7 @@ public class IBlocks {
     public static final List<BlockItem> BLOCK_ITEMS  = new ArrayList<>();
     public static final List<Block> BLOCKS = new ArrayList<>();
 
-    public static final Block STICKY_ORE                = register("sticky_ore", new OreBlockBase(Properties.rock(1.0f,8.0f)));
+    public static final Block STICKY_ORE                 = register("sticky_ore", new InfestedOreBlock(Properties.rock(1.0f,8.0f)));
     public static final Block ABYSSAL                    = register("abyssal",    new DecoBlockBase(Properties.rock(1.0f,8.0f)));
     public static final Block ABYSSAL_BRICKS             = register("abyssal_bricks", new DecoBlockBase(Properties.rock(1.0f,8.0f)));
     public static final Block ABYSSAL_BRICKS_CRACKED     = register("abyssal_bricks_cracked", new DecoBlockBase(Properties.rock(1.0f,8.0f)));
@@ -50,12 +50,29 @@ public class IBlocks {
     public static final Block ABYSSAL_COBBLE_WALL            = register("abyssal_cobble_wall", new WallBlockBase(Properties.rock(1.0f,8.0f)));
     public static final Block ABYSSAL_SMOOTH_WALL            = register("abyssal_smooth_wall", new WallBlockBase(Properties.rock(1.0f,8.0f)));
 
-//    public static final Block ABYSSAL_PILLAR                 = register("abyssal_pillar", new PillarBlockBase(Properties.rock(1.0f,8.0f)));
-//    public static final Block ABYSSAL_BRICK_PILLAR           = register("abyssal_brick_pillar", new PillarBlockBase(Properties.rock(1.0f,8.0f)));
-//    public static final Block ABYSSAL_BRICK_CRACKED_PILLAR   = register("abyssal_brick_cracked_pillar", new PillarBlockBase(Properties.rock(1.0f,8.0f)));
-//    public static final Block ABYSSAL_COBBLE_PILLAR          = register("abyssal_cobble_pillar", new PillarBlockBase(Properties.rock(1.0f,8.0f)));
-//    public static final Block ABYSSAL_SMOOTH_PILLAR          = register("abyssal_smooth_pillar", new PillarBlockBase(Properties.rock(1.0f,8.0f)));
-    //public static final Block QUARRIED          =register("quarried",   new DecoBlockBase(Properties.rock(1.0f,8.0f)));
+    public static final Block QUARRIED                       =register("quarried",   new DecoBlockBase(Properties.rock(1.0f,8.0f)));
+    public static final Block QUARRIED_BRICKS                =register("quarried_bricks",  new DecoBlockBase(Properties.rock(1.0f,8.0f)));
+    public static final Block QUARRIED_BRICKS_CRACKED        =register("quarried_bricks_cracked",   new DecoBlockBase(Properties.rock(1.0f,8.0f)));
+    public static final Block QUARRIED_COBBLE                =register("quarried_cobble",   new DecoBlockBase(Properties.rock(1.0f,8.0f)));
+    public static final Block QUARRIED_SMOOTH                =register("quarried_smooth",   new DecoBlockBase(Properties.rock(1.0f,8.0f)));
+
+    public static final Block QUARRIED_STAIRS                =register("quarried_stairs", new StairBlockBase(IBlocks.QUARRIED.getDefaultState(), Properties.rock(1.0f,8.0f)));
+    public static final Block QUARRIED_BRICKS_STAIRS         =register("quarried_bricks_stairs", new StairBlockBase(IBlocks.QUARRIED_BRICKS.getDefaultState(), Properties.rock(1.0f,8.0f)));
+    public static final Block QUARRIED_BRICKS_CRACKED_STAIRS =register("quarried_bricks_cracked_stairs", new StairBlockBase(IBlocks.QUARRIED_BRICKS_CRACKED.getDefaultState(), Properties.rock(1.0f,8.0f)));
+    public static final Block QUARRIED_COBBLE_STAIRS         =register("quarried_cobble_stairs", new StairBlockBase(IBlocks.QUARRIED_COBBLE.getDefaultState(), Properties.rock(1.0f,8.0f)));
+    public static final Block QUARRIED_SMOOTH_STAIRS         =register("quarried_smooth_stairs", new StairBlockBase(IBlocks.QUARRIED_SMOOTH.getDefaultState(), Properties.rock(1.0f,8.0f)));
+
+    public static final Block QUARRIED_SLAB                  =register("quarried_slab", new SlabBlockBase(Properties.rock(1.0f,8.0f)));
+    public static final Block QUARRIED_BRICKS_SLAB           =register("quarried_bricks_slab", new SlabBlockBase(Properties.rock(1.0f,8.0f)));
+    public static final Block QUARRIED_BRICKS_CRACKED_SLAB   =register("quarried_bricks_cracked_slab", new SlabBlockBase(Properties.rock(1.0f,8.0f)));
+    public static final Block QUARRIED_COBBLE_SLAB           =register("quarried_cobble_slab", new SlabBlockBase(Properties.rock(1.0f,8.0f)));
+    public static final Block QUARRIED_SMOOTH_SLAB           =register("quarried_smooth_slab", new SlabBlockBase(Properties.rock(1.0f,8.0f)));
+
+    public static final Block QUARRIED_WALL                  =register("quarried_wall",                new WallBlockBase(Properties.rock(1.0f,8.0f)));
+    public static final Block QUARRIED_BRICKS_WALL           =register("quarried_bricks_wall",         new WallBlockBase(Properties.rock(1.0f,8.0f)));
+    public static final Block QUARRIED_BRICKS_CRACKED_WALL   =register("quarried_bricks_cracked_wall", new WallBlockBase(Properties.rock(1.0f,8.0f)));
+    public static final Block QUARRIED_COBBLE_WALL           =register("quarried_cobble_wall",         new WallBlockBase(Properties.rock(1.0f,8.0f)));
+    public static final Block QUARRIED_SMOOTH_WALL           =register("quarried_smooth_wall",         new WallBlockBase(Properties.rock(1.0f,8.0f)));
 
 
     //Wild plant needs special treatment to start mature and be viable on any dirt.

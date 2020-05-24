@@ -1,0 +1,8 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "bottom": "brewblocks:block/quarried_bricks_cracked",
+    "top": "brewblocks:block/quarried_bricks_cracked",
+    "side": "brewblocks:block/quarried_bricks_cracked"
+  }
+}

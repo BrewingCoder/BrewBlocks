@@ -52,6 +52,18 @@ public class IFeatures {
                                         Placement.COUNT_RANGE.configure(new CountRangeConfig(Configs.WORLD.AbyssalChance.get(),0,0, Configs.WORLD.AbyssalMaxY.get()))
                         ));
             }
+
+            if(Configs.WORLD.doQuarried.get() && !biome.getCategory().equals(Biome.Category.NETHER) && !biome.getCategory().equals(Biome.Category.THEEND) ){
+                biome.addFeature(GenerationStage.Decoration.UNDERGROUND_DECORATION,
+                        Feature.ORE.withConfiguration(
+                                new OreFeatureConfig(
+                                        OreFeatureConfig.FillerBlockType.NATURAL_STONE,
+                                        IBlocks.QUARRIED.getDefaultState(), Configs.WORLD.QuarriedClusterSize.get()))
+                                .withPlacement(
+                                        Placement.COUNT_RANGE.configure(new CountRangeConfig(Configs.WORLD.QuarriedChance.get(),0,0, Configs.WORLD.QuarriedMaxY.get()))
+                                ));
+            }
+
             if(Configs.WORLD.doClay.get() && !biome.getCategory().equals(Biome.Category.NETHER) && !biome.getCategory().equals(Biome.Category.THEEND) ){
                 biome.addFeature(GenerationStage.Decoration.UNDERGROUND_DECORATION,
                         Feature.ORE.withConfiguration(

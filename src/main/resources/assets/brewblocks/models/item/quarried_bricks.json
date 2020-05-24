@@ -1,0 +1,4 @@
+{
+    "parent" : "brewblocks:block/quarried_bricks",
+    "gui_light" : "front"
+}

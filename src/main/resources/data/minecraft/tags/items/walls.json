@@ -5,6 +5,12 @@
     "brewblocks:abyssal_brick_wall",
     "brewblocks:abyssal_brick_cracked_wall",
     "brewblocks:abyssal_smooth_wall",
-    "brewblocks:abyssal_cobble_wall"
+    "brewblocks:abyssal_cobble_wall",
+    "brewblocks:quarried_wall",
+    "brewblocks:quarried_bricks_wall",
+    "brewblocks:quarried_bricks_cracked_wall",
+    "brewblocks:quarried_cobble_wall",
+    "brewblocks:quarried_smooth_wall"
+
   ]
 }

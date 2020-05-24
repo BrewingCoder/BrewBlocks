@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "type=bottom": { "model": "brewblocks:block/quarried_cobble_slab" },
+    "type=top": { "model": "brewblocks:block/quarried_cobble_slab_top" },
+    "type=double": { "model": "brewblocks:block/quarried_cobble" }
+  }
+}

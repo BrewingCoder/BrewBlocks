@@ -11,11 +11,19 @@ public class WorldConfig {
     public final ForgeConfigSpec.IntValue StickyOreChance;
     public final ForgeConfigSpec.IntValue StickyOreClusterSize;
     public final ForgeConfigSpec.IntValue StickyOreMaxY;
+    public final ForgeConfigSpec.BooleanValue doesStickyOreSpawnSlime;
+    public final ForgeConfigSpec.BooleanValue doesStickyOreChanceSpawnCreeper;
+    public final ForgeConfigSpec.IntValue StickyOreSpawnCreeperChance;
 
     public final ForgeConfigSpec.BooleanValue doAbyssal;
     public final ForgeConfigSpec.IntValue AbyssalChance;
     public final ForgeConfigSpec.IntValue AbyssalClusterSize;
     public final ForgeConfigSpec.IntValue AbyssalMaxY;
+
+    public final ForgeConfigSpec.BooleanValue doQuarried;
+    public final ForgeConfigSpec.IntValue QuarriedChance;
+    public final ForgeConfigSpec.IntValue QuarriedClusterSize;
+    public final ForgeConfigSpec.IntValue QuarriedMaxY;
 
     public final ForgeConfigSpec.BooleanValue doClay;
     public final ForgeConfigSpec.IntValue ClayChance;
@@ -34,6 +42,9 @@ public class WorldConfig {
         this.StickyOreChance = builder.comment("Chance that chunk Contains Sticky Ore Vein.").defineInRange("stickyOreGenChance",10,1,64);
         this.StickyOreClusterSize = builder.comment("Size of Sticky Ore Vein.").defineInRange("stickyOreClusterSize",5,1,64);
         this.StickyOreMaxY = builder.comment("Maximum Y value to generate Sticky Ore").defineInRange("stickyOreMaxY",63,1,100);
+        this.doesStickyOreSpawnSlime = builder.comment("Does Sticky ore Spawn Slimes when broken?").define("doesStickyOreSpawnSlime",true);
+        this.doesStickyOreChanceSpawnCreeper = builder.comment("Does Sticky Ore have a chance to spawn a Creeper?").define("doesStickyOreChanceSpawnCreeper",true);
+        this.StickyOreSpawnCreeperChance = builder.comment("Chance that a Creeper will spawn instead of a slime?").defineInRange("stickyOreSpawnCreeperChance",5,0,100);
 
         builder.pop();
         builder.push("Decoration_Abyssal");
@@ -41,6 +52,13 @@ public class WorldConfig {
         this.AbyssalChance = builder.comment("Chance that a chunk contains Abyssal vein.").defineInRange("abyssalGenChance",10,1,64);
         this.AbyssalClusterSize = builder.comment("Size of the Abyssal Vein").defineInRange("abyssalClusterSize",25,1,100);
         this.AbyssalMaxY = builder.comment("Maximum Y value to generate Abyssal").defineInRange("abyssalMaxY",63,1,100);
+
+        builder.pop();
+        builder.push("Decoration_Quarried");
+        this.doQuarried = builder.comment("Enables/Disables Quarried Stone World Generation.").define("quarriedGeneration",true);
+        this.QuarriedChance = builder.comment("Chance that a chunk contains a Quarried Vein.").defineInRange("quarriedGenChance",10,1,64);
+        this.QuarriedClusterSize =builder.comment("Size of the Quarried Stone Vein.").defineInRange("quarriedClusterSize",25,1,100);
+        this.QuarriedMaxY = builder.comment("Maximum Y value to generate Quarried Stone.").defineInRange("quarriedMaxY",63,1,100);
 
         builder.pop();
         builder.push("Clay_Generation");

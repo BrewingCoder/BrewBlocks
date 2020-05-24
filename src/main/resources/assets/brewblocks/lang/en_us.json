@@ -34,9 +34,27 @@
   "block.brewblocks.abyssal_cobble_pillar" : "Abyssal Cobblestone Pillar",
   "block.brewblocks.abyssal_smooth_pillar" : "Smooth Abyssal Pillar",
 
+  "block.brewblocks.quarried" : "Quarried Stone",
+  "block.brewblocks.quarried_wall" : "Quarried Stone Wall",
+  "block.brewblocks.quarried_slab" : "Quarried Stone Slab",
+  "block.brewblocks.quarried_stairs" : "Quarried Stone Stairs",
+
+  "block.brewblocks.quarried_bricks" : "Quarried Stone Bricks",
+  "block.brewblocks.quarried_bricks_stairs": "Quarried Stone Brick Stairs",
+  "block.brewblocks.quarried_bricks_slab": "Quarried Stone Brick Slab",
+  "block.brewblocks.quarried_bricks_wall": "Quarried Stone Brick Wall",
+
+  "block.brewblocks.quarried_cobble" : "Quarried Cobblestone",
+  "block.brewblocks.quarried_cobble_stairs" : "Quarried Cobblestone Stairs",
+  "block.brewblocks.quarried_cobble_slab" : "Quarried Cobblestone Slab",
+  "block.brewblocks.quarried_cobble_wall" : "Quarried Cobblestone Wall",
+
+  "block.brewblocks.quarried_smooth" : "Quarried Smooth Stone",
+  "block.brewblocks.quarried_smooth_stairs" : "Quarried Smooth Stone Stairs",
+  "block.brewblocks.quarried_smooth_slab" : "Quarried Smooth Stone Slab",
+  "block.brewblocks.quarried_smooth_wall" : "Quarried Smooth Stone Wall",
 
   "block.brewblocks.flax_plant_wild" : "Wild Flax Plant",
-
 
   "item.brewblocks.flax_seed" : "Flax Seed",
   "item.brewblocks.goggles" : "Night Vision Goggles",

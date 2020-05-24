@@ -1,0 +1,17 @@
+{
+  "type" : "minecraft:crafting_shaped",
+  "pattern": [
+    "b  ",
+    "bb ",
+    "bbb"
+  ],
+  "key" : {
+    "b" : {
+      "item" : "brewblocks:quarried_bricks"
+    }
+  },
+  "result" : {
+    "item" : "brewblocks:quarried_bricks_stairs",
+    "count" : 4
+  }
+}

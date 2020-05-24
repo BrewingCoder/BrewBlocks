@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "brewblocks:quarried"
+  },
+  "result": {
+    "item": "brewblocks:quarried_smooth"
+  },
+  "experience": 0.7,
+  "cookingtime": 150
+}
