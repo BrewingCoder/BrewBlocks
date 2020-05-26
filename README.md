@@ -11,10 +11,12 @@ BlakeBr0 (Mystical Agriculture), and cjm721 (Overloaded). And, for the record,
  my library is based on Lollipop which is some of the cleanest mod code I think I've ever had the privilege of reading and emulating.
  
  ### ChangeLog
- 
-` 1.0.1 - Added Night Vision Goggles`
 
- `1.0.0 - Initial Release ` 
+`1.0.2 - Added Slime Bouncy Boots`
+ 
+`1.0.1 - Added Night Vision Goggles`
+
+`1.0.0 - Initial Release ` 
   
   ### Note on Textures and Licensing
   Yes, the textures I use are 64x which is much higher resolution than the 16x of vanilla Minecraft.  However 
