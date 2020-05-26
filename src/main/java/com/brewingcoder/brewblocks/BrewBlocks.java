@@ -24,7 +24,6 @@ public class BrewBlocks
         addModListener(this::commonSetup);
         addModListener(this::clientSetup);
         addEventListener(SlimeBounceBootsItem::onLivingFall);
-
         Configs.register();
     }
 

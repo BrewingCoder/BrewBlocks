@@ -43,7 +43,7 @@ public class IFeatures {
             }
 
             if(Configs.WORLD.doAbyssal.get() && !biome.getCategory().equals(Biome.Category.NETHER) && !biome.getCategory().equals(Biome.Category.THEEND) ){
-                biome.addFeature(GenerationStage.Decoration.UNDERGROUND_DECORATION,
+                biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES,
                         Feature.ORE.withConfiguration(
                                 new OreFeatureConfig(
                                         OreFeatureConfig.FillerBlockType.NATURAL_STONE,
@@ -54,7 +54,7 @@ public class IFeatures {
             }
 
             if(Configs.WORLD.doQuarried.get() && !biome.getCategory().equals(Biome.Category.NETHER) && !biome.getCategory().equals(Biome.Category.THEEND) ){
-                biome.addFeature(GenerationStage.Decoration.UNDERGROUND_DECORATION,
+                biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES,
                         Feature.ORE.withConfiguration(
                                 new OreFeatureConfig(
                                         OreFeatureConfig.FillerBlockType.NATURAL_STONE,
@@ -65,7 +65,7 @@ public class IFeatures {
             }
 
             if(Configs.WORLD.doClay.get() && !biome.getCategory().equals(Biome.Category.NETHER) && !biome.getCategory().equals(Biome.Category.THEEND) ){
-                biome.addFeature(GenerationStage.Decoration.UNDERGROUND_DECORATION,
+                biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES,
                         Feature.ORE.withConfiguration(
                                 new OreFeatureConfig(
                                         OreFeatureConfig.FillerBlockType.NATURAL_STONE,
