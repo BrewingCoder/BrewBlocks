@@ -10,6 +10,7 @@ import net.minecraft.world.level.block.ButtonBlock;
 import net.minecraft.world.level.block.FenceBlock;
 import net.minecraft.world.level.block.FenceGateBlock;
 import net.minecraft.world.level.block.PressurePlateBlock;
+import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.minecraft.world.level.block.SlabBlock;
 import net.minecraft.world.level.block.StairBlock;
 import net.minecraft.world.level.block.WallBlock;
@@ -30,36 +31,36 @@ public final class ModBlockStateProvider extends BlockStateProvider {
         // Abyssal family
         decoSet(ModBlocks.ABYSSAL, ModBlocks.ABYSSAL_STAIRS, ModBlocks.ABYSSAL_SLAB, ModBlocks.ABYSSAL_WALL,
                 ModBlocks.ABYSSAL_FENCE, ModBlocks.ABYSSAL_FENCE_GATE,
-                ModBlocks.ABYSSAL_BUTTON, ModBlocks.ABYSSAL_PRESSURE_PLATE);
+                ModBlocks.ABYSSAL_BUTTON, ModBlocks.ABYSSAL_PRESSURE_PLATE, ModBlocks.ABYSSAL_PILLAR);
         decoSet(ModBlocks.ABYSSAL_BRICKS, ModBlocks.ABYSSAL_BRICK_STAIRS, ModBlocks.ABYSSAL_BRICK_SLAB, ModBlocks.ABYSSAL_BRICK_WALL,
                 ModBlocks.ABYSSAL_BRICK_FENCE, ModBlocks.ABYSSAL_BRICK_FENCE_GATE,
-                ModBlocks.ABYSSAL_BRICK_BUTTON, ModBlocks.ABYSSAL_BRICK_PRESSURE_PLATE);
+                ModBlocks.ABYSSAL_BRICK_BUTTON, ModBlocks.ABYSSAL_BRICK_PRESSURE_PLATE, ModBlocks.ABYSSAL_BRICK_PILLAR);
         decoSet(ModBlocks.ABYSSAL_BRICKS_CRACKED, ModBlocks.ABYSSAL_BRICK_CRACKED_STAIRS, ModBlocks.ABYSSAL_BRICK_CRACKED_SLAB, ModBlocks.ABYSSAL_BRICK_CRACKED_WALL,
                 ModBlocks.ABYSSAL_BRICK_CRACKED_FENCE, ModBlocks.ABYSSAL_BRICK_CRACKED_FENCE_GATE,
-                ModBlocks.ABYSSAL_BRICK_CRACKED_BUTTON, ModBlocks.ABYSSAL_BRICK_CRACKED_PRESSURE_PLATE);
+                ModBlocks.ABYSSAL_BRICK_CRACKED_BUTTON, ModBlocks.ABYSSAL_BRICK_CRACKED_PRESSURE_PLATE, ModBlocks.ABYSSAL_BRICK_CRACKED_PILLAR);
         decoSet(ModBlocks.ABYSSAL_COBBLE, ModBlocks.ABYSSAL_COBBLE_STAIRS, ModBlocks.ABYSSAL_COBBLE_SLAB, ModBlocks.ABYSSAL_COBBLE_WALL,
                 ModBlocks.ABYSSAL_COBBLE_FENCE, ModBlocks.ABYSSAL_COBBLE_FENCE_GATE,
-                ModBlocks.ABYSSAL_COBBLE_BUTTON, ModBlocks.ABYSSAL_COBBLE_PRESSURE_PLATE);
+                ModBlocks.ABYSSAL_COBBLE_BUTTON, ModBlocks.ABYSSAL_COBBLE_PRESSURE_PLATE, ModBlocks.ABYSSAL_COBBLE_PILLAR);
         decoSet(ModBlocks.ABYSSAL_SMOOTH, ModBlocks.ABYSSAL_SMOOTH_STAIRS, ModBlocks.ABYSSAL_SMOOTH_SLAB, ModBlocks.ABYSSAL_SMOOTH_WALL,
                 ModBlocks.ABYSSAL_SMOOTH_FENCE, ModBlocks.ABYSSAL_SMOOTH_FENCE_GATE,
-                ModBlocks.ABYSSAL_SMOOTH_BUTTON, ModBlocks.ABYSSAL_SMOOTH_PRESSURE_PLATE);
+                ModBlocks.ABYSSAL_SMOOTH_BUTTON, ModBlocks.ABYSSAL_SMOOTH_PRESSURE_PLATE, ModBlocks.ABYSSAL_SMOOTH_PILLAR);
 
         // Quarried family
         decoSet(ModBlocks.QUARRIED, ModBlocks.QUARRIED_STAIRS, ModBlocks.QUARRIED_SLAB, ModBlocks.QUARRIED_WALL,
                 ModBlocks.QUARRIED_FENCE, ModBlocks.QUARRIED_FENCE_GATE,
-                ModBlocks.QUARRIED_BUTTON, ModBlocks.QUARRIED_PRESSURE_PLATE);
+                ModBlocks.QUARRIED_BUTTON, ModBlocks.QUARRIED_PRESSURE_PLATE, ModBlocks.QUARRIED_PILLAR);
         decoSet(ModBlocks.QUARRIED_BRICKS, ModBlocks.QUARRIED_BRICKS_STAIRS, ModBlocks.QUARRIED_BRICKS_SLAB, ModBlocks.QUARRIED_BRICKS_WALL,
                 ModBlocks.QUARRIED_BRICKS_FENCE, ModBlocks.QUARRIED_BRICKS_FENCE_GATE,
-                ModBlocks.QUARRIED_BRICKS_BUTTON, ModBlocks.QUARRIED_BRICKS_PRESSURE_PLATE);
+                ModBlocks.QUARRIED_BRICKS_BUTTON, ModBlocks.QUARRIED_BRICKS_PRESSURE_PLATE, ModBlocks.QUARRIED_BRICKS_PILLAR);
         decoSet(ModBlocks.QUARRIED_BRICKS_CRACKED, ModBlocks.QUARRIED_BRICKS_CRACKED_STAIRS, ModBlocks.QUARRIED_BRICKS_CRACKED_SLAB, ModBlocks.QUARRIED_BRICKS_CRACKED_WALL,
                 ModBlocks.QUARRIED_BRICKS_CRACKED_FENCE, ModBlocks.QUARRIED_BRICKS_CRACKED_FENCE_GATE,
-                ModBlocks.QUARRIED_BRICKS_CRACKED_BUTTON, ModBlocks.QUARRIED_BRICKS_CRACKED_PRESSURE_PLATE);
+                ModBlocks.QUARRIED_BRICKS_CRACKED_BUTTON, ModBlocks.QUARRIED_BRICKS_CRACKED_PRESSURE_PLATE, ModBlocks.QUARRIED_BRICKS_CRACKED_PILLAR);
         decoSet(ModBlocks.QUARRIED_COBBLE, ModBlocks.QUARRIED_COBBLE_STAIRS, ModBlocks.QUARRIED_COBBLE_SLAB, ModBlocks.QUARRIED_COBBLE_WALL,
                 ModBlocks.QUARRIED_COBBLE_FENCE, ModBlocks.QUARRIED_COBBLE_FENCE_GATE,
-                ModBlocks.QUARRIED_COBBLE_BUTTON, ModBlocks.QUARRIED_COBBLE_PRESSURE_PLATE);
+                ModBlocks.QUARRIED_COBBLE_BUTTON, ModBlocks.QUARRIED_COBBLE_PRESSURE_PLATE, ModBlocks.QUARRIED_COBBLE_PILLAR);
         decoSet(ModBlocks.QUARRIED_SMOOTH, ModBlocks.QUARRIED_SMOOTH_STAIRS, ModBlocks.QUARRIED_SMOOTH_SLAB, ModBlocks.QUARRIED_SMOOTH_WALL,
                 ModBlocks.QUARRIED_SMOOTH_FENCE, ModBlocks.QUARRIED_SMOOTH_FENCE_GATE,
-                ModBlocks.QUARRIED_SMOOTH_BUTTON, ModBlocks.QUARRIED_SMOOTH_PRESSURE_PLATE);
+                ModBlocks.QUARRIED_SMOOTH_BUTTON, ModBlocks.QUARRIED_SMOOTH_PRESSURE_PLATE, ModBlocks.QUARRIED_SMOOTH_PILLAR);
     }
 
     private void decoSet(DeferredBlock<Block> base,
@@ -69,7 +70,8 @@ public final class ModBlockStateProvider extends BlockStateProvider {
                          DeferredBlock<FenceBlock> fence,
                          DeferredBlock<FenceGateBlock> gate,
                          DeferredBlock<ButtonBlock> button,
-                         DeferredBlock<PressurePlateBlock> plate) {
+                         DeferredBlock<PressurePlateBlock> plate,
+                         DeferredBlock<RotatedPillarBlock> pillar) {
         Block baseBlock = base.get();
         ResourceLocation tex = blockTexture(baseBlock);
         ResourceLocation baseModel = modLoc("block/" + pathOf(baseBlock));
@@ -103,6 +105,10 @@ public final class ModBlockStateProvider extends BlockStateProvider {
         PressurePlateBlock plateBlock = plate.get();
         pressurePlateBlock(plateBlock, tex);
         itemModels().withExistingParent(pathOf(plateBlock), modLoc("block/" + pathOf(plateBlock)));
+
+        RotatedPillarBlock pillarBlock = pillar.get();
+        axisBlock(pillarBlock, tex, tex);
+        itemModels().withExistingParent(pathOf(pillarBlock), modLoc("block/" + pathOf(pillarBlock)));
     }
 
     private static String pathOf(Block block) {

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "brewblocks:block/quarried",
+    "side": "brewblocks:block/quarried"
+  }
+}

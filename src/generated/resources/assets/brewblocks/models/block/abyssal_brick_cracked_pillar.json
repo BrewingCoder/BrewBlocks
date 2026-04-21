@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "brewblocks:block/abyssal_bricks_cracked",
+    "side": "brewblocks:block/abyssal_bricks_cracked"
+  }
+}

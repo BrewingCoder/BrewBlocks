@@ -41,6 +41,11 @@
     "brewblocks:abyssal_brick_cracked_pressure_plate",
     "brewblocks:abyssal_cobble_pressure_plate",
     "brewblocks:abyssal_smooth_pressure_plate",
+    "brewblocks:abyssal_pillar",
+    "brewblocks:abyssal_brick_pillar",
+    "brewblocks:abyssal_brick_cracked_pillar",
+    "brewblocks:abyssal_cobble_pillar",
+    "brewblocks:abyssal_smooth_pillar",
     "brewblocks:quarried",
     "brewblocks:quarried_bricks",
     "brewblocks:quarried_bricks_cracked",
@@ -80,6 +85,11 @@
     "brewblocks:quarried_bricks_pressure_plate",
     "brewblocks:quarried_bricks_cracked_pressure_plate",
     "brewblocks:quarried_cobble_pressure_plate",
-    "brewblocks:quarried_smooth_pressure_plate"
+    "brewblocks:quarried_smooth_pressure_plate",
+    "brewblocks:quarried_pillar",
+    "brewblocks:quarried_bricks_pillar",
+    "brewblocks:quarried_bricks_cracked_pillar",
+    "brewblocks:quarried_cobble_pillar",
+    "brewblocks:quarried_smooth_pillar"
   ]
 }

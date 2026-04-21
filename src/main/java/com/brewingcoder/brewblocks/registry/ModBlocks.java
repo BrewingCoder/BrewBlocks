@@ -7,6 +7,7 @@ import net.minecraft.world.level.block.ButtonBlock;
 import net.minecraft.world.level.block.FenceBlock;
 import net.minecraft.world.level.block.FenceGateBlock;
 import net.minecraft.world.level.block.PressurePlateBlock;
+import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.minecraft.world.level.block.SlabBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.StairBlock;
@@ -100,6 +101,12 @@ public final class ModBlocks {
     public static final DeferredBlock<PressurePlateBlock> ABYSSAL_COBBLE_PRESSURE_PLATE = plate("abyssal_cobble_pressure_plate");
     public static final DeferredBlock<PressurePlateBlock> ABYSSAL_SMOOTH_PRESSURE_PLATE = plate("abyssal_smooth_pressure_plate");
 
+    public static final DeferredBlock<RotatedPillarBlock> ABYSSAL_PILLAR = pillar("abyssal_pillar");
+    public static final DeferredBlock<RotatedPillarBlock> ABYSSAL_BRICK_PILLAR = pillar("abyssal_brick_pillar");
+    public static final DeferredBlock<RotatedPillarBlock> ABYSSAL_BRICK_CRACKED_PILLAR = pillar("abyssal_brick_cracked_pillar");
+    public static final DeferredBlock<RotatedPillarBlock> ABYSSAL_COBBLE_PILLAR = pillar("abyssal_cobble_pillar");
+    public static final DeferredBlock<RotatedPillarBlock> ABYSSAL_SMOOTH_PILLAR = pillar("abyssal_smooth_pillar");
+
     // ---- Quarried set ----
     public static final DeferredBlock<Block> QUARRIED = plain("quarried");
     public static final DeferredBlock<Block> QUARRIED_BRICKS = plain("quarried_bricks");
@@ -149,6 +156,12 @@ public final class ModBlocks {
     public static final DeferredBlock<PressurePlateBlock> QUARRIED_COBBLE_PRESSURE_PLATE = plate("quarried_cobble_pressure_plate");
     public static final DeferredBlock<PressurePlateBlock> QUARRIED_SMOOTH_PRESSURE_PLATE = plate("quarried_smooth_pressure_plate");
 
+    public static final DeferredBlock<RotatedPillarBlock> QUARRIED_PILLAR = pillar("quarried_pillar");
+    public static final DeferredBlock<RotatedPillarBlock> QUARRIED_BRICKS_PILLAR = pillar("quarried_bricks_pillar");
+    public static final DeferredBlock<RotatedPillarBlock> QUARRIED_BRICKS_CRACKED_PILLAR = pillar("quarried_bricks_cracked_pillar");
+    public static final DeferredBlock<RotatedPillarBlock> QUARRIED_COBBLE_PILLAR = pillar("quarried_cobble_pillar");
+    public static final DeferredBlock<RotatedPillarBlock> QUARRIED_SMOOTH_PILLAR = pillar("quarried_smooth_pillar");
+
     private static DeferredBlock<Block> plain(String name) {
         return REGISTRY.registerBlock(name, Block::new, rockProps());
     }
@@ -187,6 +200,10 @@ public final class ModBlocks {
         return REGISTRY.registerBlock(name,
                 props -> new PressurePlateBlock(BlockSetType.STONE, props),
                 plateProps());
+    }
+
+    private static DeferredBlock<RotatedPillarBlock> pillar(String name) {
+        return REGISTRY.registerBlock(name, RotatedPillarBlock::new, rockProps());
     }
 
     private ModBlocks() {}

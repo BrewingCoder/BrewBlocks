@@ -51,6 +51,12 @@
   "block.brewblocks.abyssal_cobble_pressure_plate": "Abyssal Cobblestone Pressure Plate",
   "block.brewblocks.abyssal_smooth_pressure_plate": "Smooth Abyssal Pressure Plate",
 
+  "block.brewblocks.abyssal_pillar": "Abyssal Pillar",
+  "block.brewblocks.abyssal_brick_pillar": "Abyssal Brick Pillar",
+  "block.brewblocks.abyssal_brick_cracked_pillar": "Cracked Abyssal Brick Pillar",
+  "block.brewblocks.abyssal_cobble_pillar": "Abyssal Cobblestone Pillar",
+  "block.brewblocks.abyssal_smooth_pillar": "Smooth Abyssal Pillar",
+
   "block.brewblocks.quarried": "Quarried Stone",
   "block.brewblocks.quarried_bricks": "Quarried Stone Bricks",
   "block.brewblocks.quarried_bricks_cracked": "Cracked Quarried Stone Bricks",
@@ -98,6 +104,12 @@
   "block.brewblocks.quarried_bricks_cracked_pressure_plate": "Cracked Quarried Stone Brick Pressure Plate",
   "block.brewblocks.quarried_cobble_pressure_plate": "Quarried Cobblestone Pressure Plate",
   "block.brewblocks.quarried_smooth_pressure_plate": "Smooth Quarried Stone Pressure Plate",
+
+  "block.brewblocks.quarried_pillar": "Quarried Stone Pillar",
+  "block.brewblocks.quarried_bricks_pillar": "Quarried Stone Brick Pillar",
+  "block.brewblocks.quarried_bricks_cracked_pillar": "Cracked Quarried Stone Brick Pillar",
+  "block.brewblocks.quarried_cobble_pillar": "Quarried Cobblestone Pillar",
+  "block.brewblocks.quarried_smooth_pillar": "Smooth Quarried Stone Pillar",
 
   "item.brewblocks.goggles": "Night Vision Goggles",
   "item.brewblocks.slime_bounce_boots": "Slime Bounce Boots",

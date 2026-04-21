@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "brewblocks:block/quarried_smooth_pillar_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "brewblocks:block/quarried_smooth_pillar"
+    },
+    "axis=z": {
+      "model": "brewblocks:block/quarried_smooth_pillar_horizontal",
+      "x": 90
+    }
+  }
+}
