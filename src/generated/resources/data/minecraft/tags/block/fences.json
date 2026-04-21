@@ -1,14 +1,19 @@
 {
   "values": [
-    "brewblocks:abyssal_fence",
+    "brewblocks:abyssal_stone_fence",
     "brewblocks:abyssal_brick_fence",
     "brewblocks:abyssal_brick_cracked_fence",
-    "brewblocks:abyssal_cobble_fence",
-    "brewblocks:abyssal_smooth_fence",
-    "brewblocks:quarried_fence",
-    "brewblocks:quarried_bricks_fence",
-    "brewblocks:quarried_bricks_cracked_fence",
-    "brewblocks:quarried_cobble_fence",
-    "brewblocks:quarried_smooth_fence"
+    "brewblocks:abyssal_cobblestone_fence",
+    "brewblocks:abyssal_smooth_stone_fence",
+    "brewblocks:quarried_stone_fence",
+    "brewblocks:quarried_brick_fence",
+    "brewblocks:quarried_brick_cracked_fence",
+    "brewblocks:quarried_cobblestone_fence",
+    "brewblocks:quarried_smooth_stone_fence",
+    "brewblocks:burnt_stone_fence",
+    "brewblocks:burnt_brick_fence",
+    "brewblocks:burnt_brick_cracked_fence",
+    "brewblocks:burnt_cobblestone_fence",
+    "brewblocks:burnt_smooth_stone_fence"
   ]
 }

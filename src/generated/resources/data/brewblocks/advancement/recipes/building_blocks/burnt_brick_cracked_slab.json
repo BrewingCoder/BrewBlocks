@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_burnt_bricks_cracked": {
+      "conditions": {
+        "items": [
+          {
+            "items": "brewblocks:burnt_bricks_cracked"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "brewblocks:burnt_brick_cracked_slab"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_burnt_bricks_cracked"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "brewblocks:burnt_brick_cracked_slab"
+    ]
+  }
+}

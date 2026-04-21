@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "brewblocks:block/quarried_stone",
+    "side": "brewblocks:block/quarried_stone"
+  }
+}

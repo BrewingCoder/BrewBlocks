@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "brewblocks:burnt_bricks"
+  },
+  "result": {
+    "count": 2,
+    "id": "brewblocks:burnt_brick_slab"
+  }
+}

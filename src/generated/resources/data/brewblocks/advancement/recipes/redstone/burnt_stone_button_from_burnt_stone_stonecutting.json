@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_burnt_stone": {
+      "conditions": {
+        "items": [
+          {
+            "items": "brewblocks:burnt_stone"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "brewblocks:burnt_stone_button_from_burnt_stone_stonecutting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_burnt_stone"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "brewblocks:burnt_stone_button_from_burnt_stone_stonecutting"
+    ]
+  }
+}

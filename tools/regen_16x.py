@@ -30,16 +30,21 @@ MC_JAR = Path.home() / ".gradle/caches/neoformruntime/artifacts/minecraft_1.21.1
 
 # <brewblocks name> -> <vanilla texture>
 MAPPING = {
-    "abyssal":                 "stone",
+    "abyssal_stone":           "stone",
     "abyssal_bricks":          "stone_bricks",
     "abyssal_bricks_cracked":  "cracked_stone_bricks",
-    "abyssal_cobble":          "cobblestone",
-    "abyssal_smooth":          "smooth_stone",
-    "quarried":                "stone",
+    "abyssal_cobblestone":     "cobblestone",
+    "abyssal_smooth_stone":    "smooth_stone",
+    "quarried_stone":          "stone",
     "quarried_bricks":         "stone_bricks",
     "quarried_bricks_cracked": "cracked_stone_bricks",
-    "quarried_cobble":         "cobblestone",
-    "quarried_smooth":         "smooth_stone",
+    "quarried_cobblestone":    "cobblestone",
+    "quarried_smooth_stone":   "smooth_stone",
+    "burnt_stone":             "stone",
+    "burnt_bricks":            "stone_bricks",
+    "burnt_bricks_cracked":    "cracked_stone_bricks",
+    "burnt_cobblestone":       "cobblestone",
+    "burnt_smooth_stone":      "smooth_stone",
     "sticky_ore":              "coal_ore",
 }
 

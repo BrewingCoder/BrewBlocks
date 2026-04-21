@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "brewblocks:burnt_cobblestone"
+  },
+  "result": {
+    "count": 1,
+    "id": "brewblocks:burnt_cobblestone_fence"
+  }
+}

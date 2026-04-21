@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "brewblocks:block/abyssal_smooth",
-    "side": "brewblocks:block/abyssal_smooth"
-  }
-}

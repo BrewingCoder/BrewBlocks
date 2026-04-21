@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_abyssal": {
+    "has_abyssal_stone": {
       "conditions": {
         "items": [
           {
-            "items": "brewblocks:abyssal"
+            "items": "brewblocks:abyssal_stone"
           }
         ]
       },
@@ -21,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_abyssal"
+      "has_abyssal_stone"
     ]
   ],
   "rewards": {

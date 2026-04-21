@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "brewblocks:block/burnt_bricks_cracked",
+    "side": "brewblocks:block/burnt_bricks_cracked",
+    "top": "brewblocks:block/burnt_bricks_cracked"
+  }
+}

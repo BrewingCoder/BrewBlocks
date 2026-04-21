@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "ingredients": [
+    {
+      "item": "brewblocks:burnt_smooth_stone"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "brewblocks:burnt_smooth_stone_button"
+  }
+}

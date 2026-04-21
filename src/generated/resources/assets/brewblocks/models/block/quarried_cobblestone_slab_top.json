@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "brewblocks:block/quarried_cobblestone",
+    "side": "brewblocks:block/quarried_cobblestone",
+    "top": "brewblocks:block/quarried_cobblestone"
+  }
+}

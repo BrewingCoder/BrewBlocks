@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "brewblocks:block/burnt_stone",
+    "side": "brewblocks:block/burnt_stone",
+    "top": "brewblocks:block/burnt_stone"
+  }
+}

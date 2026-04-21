@@ -1,14 +1,19 @@
 {
   "values": [
-    "brewblocks:abyssal_button",
+    "brewblocks:abyssal_stone_button",
     "brewblocks:abyssal_brick_button",
     "brewblocks:abyssal_brick_cracked_button",
-    "brewblocks:abyssal_cobble_button",
-    "brewblocks:abyssal_smooth_button",
-    "brewblocks:quarried_button",
-    "brewblocks:quarried_bricks_button",
-    "brewblocks:quarried_bricks_cracked_button",
-    "brewblocks:quarried_cobble_button",
-    "brewblocks:quarried_smooth_button"
+    "brewblocks:abyssal_cobblestone_button",
+    "brewblocks:abyssal_smooth_stone_button",
+    "brewblocks:quarried_stone_button",
+    "brewblocks:quarried_brick_button",
+    "brewblocks:quarried_brick_cracked_button",
+    "brewblocks:quarried_cobblestone_button",
+    "brewblocks:quarried_smooth_stone_button",
+    "brewblocks:burnt_stone_button",
+    "brewblocks:burnt_brick_button",
+    "brewblocks:burnt_brick_cracked_button",
+    "brewblocks:burnt_cobblestone_button",
+    "brewblocks:burnt_smooth_stone_button"
   ]
 }

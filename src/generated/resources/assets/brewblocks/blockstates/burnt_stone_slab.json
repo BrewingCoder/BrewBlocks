@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "brewblocks:block/burnt_stone_slab"
+    },
+    "type=double": {
+      "model": "brewblocks:block/burnt_stone"
+    },
+    "type=top": {
+      "model": "brewblocks:block/burnt_stone_slab_top"
+    }
+  }
+}

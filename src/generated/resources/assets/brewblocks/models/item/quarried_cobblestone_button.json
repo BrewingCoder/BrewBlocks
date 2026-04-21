@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button_inventory",
+  "textures": {
+    "texture": "brewblocks:block/quarried_cobblestone"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "brewblocks:quarried_cobblestone"
+  },
+  "result": {
+    "count": 1,
+    "id": "brewblocks:quarried_cobblestone_fence_gate"
+  }
+}

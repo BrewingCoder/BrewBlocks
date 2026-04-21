@@ -25,18 +25,18 @@ public final class ModRecipeProvider extends RecipeProvider {
 
     @Override
     protected void buildRecipes(RecipeOutput out) {
-        // Abyssal family
+        // ----- Abyssal family -----
         chain(out,
-                ModBlocks.ABYSSAL_COBBLE.get(),
-                ModBlocks.ABYSSAL.get(),
-                ModBlocks.ABYSSAL_SMOOTH.get(),
+                ModBlocks.ABYSSAL_COBBLESTONE.get(),
+                ModBlocks.ABYSSAL_STONE.get(),
+                ModBlocks.ABYSSAL_SMOOTH_STONE.get(),
                 ModBlocks.ABYSSAL_BRICKS.get(),
                 ModBlocks.ABYSSAL_BRICKS_CRACKED.get());
 
-        variants(out, ModBlocks.ABYSSAL.get(),
-                ModBlocks.ABYSSAL_STAIRS.get(), ModBlocks.ABYSSAL_SLAB.get(), ModBlocks.ABYSSAL_WALL.get(),
-                ModBlocks.ABYSSAL_FENCE.get(), ModBlocks.ABYSSAL_FENCE_GATE.get(),
-                ModBlocks.ABYSSAL_BUTTON.get(), ModBlocks.ABYSSAL_PRESSURE_PLATE.get(), ModBlocks.ABYSSAL_PILLAR.get());
+        variants(out, ModBlocks.ABYSSAL_STONE.get(),
+                ModBlocks.ABYSSAL_STONE_STAIRS.get(), ModBlocks.ABYSSAL_STONE_SLAB.get(), ModBlocks.ABYSSAL_STONE_WALL.get(),
+                ModBlocks.ABYSSAL_STONE_FENCE.get(), ModBlocks.ABYSSAL_STONE_FENCE_GATE.get(),
+                ModBlocks.ABYSSAL_STONE_BUTTON.get(), ModBlocks.ABYSSAL_STONE_PRESSURE_PLATE.get(), ModBlocks.ABYSSAL_STONE_PILLAR.get());
         variants(out, ModBlocks.ABYSSAL_BRICKS.get(),
                 ModBlocks.ABYSSAL_BRICK_STAIRS.get(), ModBlocks.ABYSSAL_BRICK_SLAB.get(), ModBlocks.ABYSSAL_BRICK_WALL.get(),
                 ModBlocks.ABYSSAL_BRICK_FENCE.get(), ModBlocks.ABYSSAL_BRICK_FENCE_GATE.get(),
@@ -45,43 +45,72 @@ public final class ModRecipeProvider extends RecipeProvider {
                 ModBlocks.ABYSSAL_BRICK_CRACKED_STAIRS.get(), ModBlocks.ABYSSAL_BRICK_CRACKED_SLAB.get(), ModBlocks.ABYSSAL_BRICK_CRACKED_WALL.get(),
                 ModBlocks.ABYSSAL_BRICK_CRACKED_FENCE.get(), ModBlocks.ABYSSAL_BRICK_CRACKED_FENCE_GATE.get(),
                 ModBlocks.ABYSSAL_BRICK_CRACKED_BUTTON.get(), ModBlocks.ABYSSAL_BRICK_CRACKED_PRESSURE_PLATE.get(), ModBlocks.ABYSSAL_BRICK_CRACKED_PILLAR.get());
-        variants(out, ModBlocks.ABYSSAL_COBBLE.get(),
-                ModBlocks.ABYSSAL_COBBLE_STAIRS.get(), ModBlocks.ABYSSAL_COBBLE_SLAB.get(), ModBlocks.ABYSSAL_COBBLE_WALL.get(),
-                ModBlocks.ABYSSAL_COBBLE_FENCE.get(), ModBlocks.ABYSSAL_COBBLE_FENCE_GATE.get(),
-                ModBlocks.ABYSSAL_COBBLE_BUTTON.get(), ModBlocks.ABYSSAL_COBBLE_PRESSURE_PLATE.get(), ModBlocks.ABYSSAL_COBBLE_PILLAR.get());
-        variants(out, ModBlocks.ABYSSAL_SMOOTH.get(),
-                ModBlocks.ABYSSAL_SMOOTH_STAIRS.get(), ModBlocks.ABYSSAL_SMOOTH_SLAB.get(), ModBlocks.ABYSSAL_SMOOTH_WALL.get(),
-                ModBlocks.ABYSSAL_SMOOTH_FENCE.get(), ModBlocks.ABYSSAL_SMOOTH_FENCE_GATE.get(),
-                ModBlocks.ABYSSAL_SMOOTH_BUTTON.get(), ModBlocks.ABYSSAL_SMOOTH_PRESSURE_PLATE.get(), ModBlocks.ABYSSAL_SMOOTH_PILLAR.get());
+        variants(out, ModBlocks.ABYSSAL_COBBLESTONE.get(),
+                ModBlocks.ABYSSAL_COBBLESTONE_STAIRS.get(), ModBlocks.ABYSSAL_COBBLESTONE_SLAB.get(), ModBlocks.ABYSSAL_COBBLESTONE_WALL.get(),
+                ModBlocks.ABYSSAL_COBBLESTONE_FENCE.get(), ModBlocks.ABYSSAL_COBBLESTONE_FENCE_GATE.get(),
+                ModBlocks.ABYSSAL_COBBLESTONE_BUTTON.get(), ModBlocks.ABYSSAL_COBBLESTONE_PRESSURE_PLATE.get(), ModBlocks.ABYSSAL_COBBLESTONE_PILLAR.get());
+        variants(out, ModBlocks.ABYSSAL_SMOOTH_STONE.get(),
+                ModBlocks.ABYSSAL_SMOOTH_STONE_STAIRS.get(), ModBlocks.ABYSSAL_SMOOTH_STONE_SLAB.get(), ModBlocks.ABYSSAL_SMOOTH_STONE_WALL.get(),
+                ModBlocks.ABYSSAL_SMOOTH_STONE_FENCE.get(), ModBlocks.ABYSSAL_SMOOTH_STONE_FENCE_GATE.get(),
+                ModBlocks.ABYSSAL_SMOOTH_STONE_BUTTON.get(), ModBlocks.ABYSSAL_SMOOTH_STONE_PRESSURE_PLATE.get(), ModBlocks.ABYSSAL_SMOOTH_STONE_PILLAR.get());
 
-        // Quarried family
+        // ----- Quarried family -----
         chain(out,
-                ModBlocks.QUARRIED_COBBLE.get(),
-                ModBlocks.QUARRIED.get(),
-                ModBlocks.QUARRIED_SMOOTH.get(),
+                ModBlocks.QUARRIED_COBBLESTONE.get(),
+                ModBlocks.QUARRIED_STONE.get(),
+                ModBlocks.QUARRIED_SMOOTH_STONE.get(),
                 ModBlocks.QUARRIED_BRICKS.get(),
                 ModBlocks.QUARRIED_BRICKS_CRACKED.get());
 
-        variants(out, ModBlocks.QUARRIED.get(),
-                ModBlocks.QUARRIED_STAIRS.get(), ModBlocks.QUARRIED_SLAB.get(), ModBlocks.QUARRIED_WALL.get(),
-                ModBlocks.QUARRIED_FENCE.get(), ModBlocks.QUARRIED_FENCE_GATE.get(),
-                ModBlocks.QUARRIED_BUTTON.get(), ModBlocks.QUARRIED_PRESSURE_PLATE.get(), ModBlocks.QUARRIED_PILLAR.get());
+        variants(out, ModBlocks.QUARRIED_STONE.get(),
+                ModBlocks.QUARRIED_STONE_STAIRS.get(), ModBlocks.QUARRIED_STONE_SLAB.get(), ModBlocks.QUARRIED_STONE_WALL.get(),
+                ModBlocks.QUARRIED_STONE_FENCE.get(), ModBlocks.QUARRIED_STONE_FENCE_GATE.get(),
+                ModBlocks.QUARRIED_STONE_BUTTON.get(), ModBlocks.QUARRIED_STONE_PRESSURE_PLATE.get(), ModBlocks.QUARRIED_STONE_PILLAR.get());
         variants(out, ModBlocks.QUARRIED_BRICKS.get(),
-                ModBlocks.QUARRIED_BRICKS_STAIRS.get(), ModBlocks.QUARRIED_BRICKS_SLAB.get(), ModBlocks.QUARRIED_BRICKS_WALL.get(),
-                ModBlocks.QUARRIED_BRICKS_FENCE.get(), ModBlocks.QUARRIED_BRICKS_FENCE_GATE.get(),
-                ModBlocks.QUARRIED_BRICKS_BUTTON.get(), ModBlocks.QUARRIED_BRICKS_PRESSURE_PLATE.get(), ModBlocks.QUARRIED_BRICKS_PILLAR.get());
+                ModBlocks.QUARRIED_BRICK_STAIRS.get(), ModBlocks.QUARRIED_BRICK_SLAB.get(), ModBlocks.QUARRIED_BRICK_WALL.get(),
+                ModBlocks.QUARRIED_BRICK_FENCE.get(), ModBlocks.QUARRIED_BRICK_FENCE_GATE.get(),
+                ModBlocks.QUARRIED_BRICK_BUTTON.get(), ModBlocks.QUARRIED_BRICK_PRESSURE_PLATE.get(), ModBlocks.QUARRIED_BRICK_PILLAR.get());
         variants(out, ModBlocks.QUARRIED_BRICKS_CRACKED.get(),
-                ModBlocks.QUARRIED_BRICKS_CRACKED_STAIRS.get(), ModBlocks.QUARRIED_BRICKS_CRACKED_SLAB.get(), ModBlocks.QUARRIED_BRICKS_CRACKED_WALL.get(),
-                ModBlocks.QUARRIED_BRICKS_CRACKED_FENCE.get(), ModBlocks.QUARRIED_BRICKS_CRACKED_FENCE_GATE.get(),
-                ModBlocks.QUARRIED_BRICKS_CRACKED_BUTTON.get(), ModBlocks.QUARRIED_BRICKS_CRACKED_PRESSURE_PLATE.get(), ModBlocks.QUARRIED_BRICKS_CRACKED_PILLAR.get());
-        variants(out, ModBlocks.QUARRIED_COBBLE.get(),
-                ModBlocks.QUARRIED_COBBLE_STAIRS.get(), ModBlocks.QUARRIED_COBBLE_SLAB.get(), ModBlocks.QUARRIED_COBBLE_WALL.get(),
-                ModBlocks.QUARRIED_COBBLE_FENCE.get(), ModBlocks.QUARRIED_COBBLE_FENCE_GATE.get(),
-                ModBlocks.QUARRIED_COBBLE_BUTTON.get(), ModBlocks.QUARRIED_COBBLE_PRESSURE_PLATE.get(), ModBlocks.QUARRIED_COBBLE_PILLAR.get());
-        variants(out, ModBlocks.QUARRIED_SMOOTH.get(),
-                ModBlocks.QUARRIED_SMOOTH_STAIRS.get(), ModBlocks.QUARRIED_SMOOTH_SLAB.get(), ModBlocks.QUARRIED_SMOOTH_WALL.get(),
-                ModBlocks.QUARRIED_SMOOTH_FENCE.get(), ModBlocks.QUARRIED_SMOOTH_FENCE_GATE.get(),
-                ModBlocks.QUARRIED_SMOOTH_BUTTON.get(), ModBlocks.QUARRIED_SMOOTH_PRESSURE_PLATE.get(), ModBlocks.QUARRIED_SMOOTH_PILLAR.get());
+                ModBlocks.QUARRIED_BRICK_CRACKED_STAIRS.get(), ModBlocks.QUARRIED_BRICK_CRACKED_SLAB.get(), ModBlocks.QUARRIED_BRICK_CRACKED_WALL.get(),
+                ModBlocks.QUARRIED_BRICK_CRACKED_FENCE.get(), ModBlocks.QUARRIED_BRICK_CRACKED_FENCE_GATE.get(),
+                ModBlocks.QUARRIED_BRICK_CRACKED_BUTTON.get(), ModBlocks.QUARRIED_BRICK_CRACKED_PRESSURE_PLATE.get(), ModBlocks.QUARRIED_BRICK_CRACKED_PILLAR.get());
+        variants(out, ModBlocks.QUARRIED_COBBLESTONE.get(),
+                ModBlocks.QUARRIED_COBBLESTONE_STAIRS.get(), ModBlocks.QUARRIED_COBBLESTONE_SLAB.get(), ModBlocks.QUARRIED_COBBLESTONE_WALL.get(),
+                ModBlocks.QUARRIED_COBBLESTONE_FENCE.get(), ModBlocks.QUARRIED_COBBLESTONE_FENCE_GATE.get(),
+                ModBlocks.QUARRIED_COBBLESTONE_BUTTON.get(), ModBlocks.QUARRIED_COBBLESTONE_PRESSURE_PLATE.get(), ModBlocks.QUARRIED_COBBLESTONE_PILLAR.get());
+        variants(out, ModBlocks.QUARRIED_SMOOTH_STONE.get(),
+                ModBlocks.QUARRIED_SMOOTH_STONE_STAIRS.get(), ModBlocks.QUARRIED_SMOOTH_STONE_SLAB.get(), ModBlocks.QUARRIED_SMOOTH_STONE_WALL.get(),
+                ModBlocks.QUARRIED_SMOOTH_STONE_FENCE.get(), ModBlocks.QUARRIED_SMOOTH_STONE_FENCE_GATE.get(),
+                ModBlocks.QUARRIED_SMOOTH_STONE_BUTTON.get(), ModBlocks.QUARRIED_SMOOTH_STONE_PRESSURE_PLATE.get(), ModBlocks.QUARRIED_SMOOTH_STONE_PILLAR.get());
+
+        // ----- Burnt family -----
+        chain(out,
+                ModBlocks.BURNT_COBBLESTONE.get(),
+                ModBlocks.BURNT_STONE.get(),
+                ModBlocks.BURNT_SMOOTH_STONE.get(),
+                ModBlocks.BURNT_BRICKS.get(),
+                ModBlocks.BURNT_BRICKS_CRACKED.get());
+
+        variants(out, ModBlocks.BURNT_STONE.get(),
+                ModBlocks.BURNT_STONE_STAIRS.get(), ModBlocks.BURNT_STONE_SLAB.get(), ModBlocks.BURNT_STONE_WALL.get(),
+                ModBlocks.BURNT_STONE_FENCE.get(), ModBlocks.BURNT_STONE_FENCE_GATE.get(),
+                ModBlocks.BURNT_STONE_BUTTON.get(), ModBlocks.BURNT_STONE_PRESSURE_PLATE.get(), ModBlocks.BURNT_STONE_PILLAR.get());
+        variants(out, ModBlocks.BURNT_BRICKS.get(),
+                ModBlocks.BURNT_BRICK_STAIRS.get(), ModBlocks.BURNT_BRICK_SLAB.get(), ModBlocks.BURNT_BRICK_WALL.get(),
+                ModBlocks.BURNT_BRICK_FENCE.get(), ModBlocks.BURNT_BRICK_FENCE_GATE.get(),
+                ModBlocks.BURNT_BRICK_BUTTON.get(), ModBlocks.BURNT_BRICK_PRESSURE_PLATE.get(), ModBlocks.BURNT_BRICK_PILLAR.get());
+        variants(out, ModBlocks.BURNT_BRICKS_CRACKED.get(),
+                ModBlocks.BURNT_BRICK_CRACKED_STAIRS.get(), ModBlocks.BURNT_BRICK_CRACKED_SLAB.get(), ModBlocks.BURNT_BRICK_CRACKED_WALL.get(),
+                ModBlocks.BURNT_BRICK_CRACKED_FENCE.get(), ModBlocks.BURNT_BRICK_CRACKED_FENCE_GATE.get(),
+                ModBlocks.BURNT_BRICK_CRACKED_BUTTON.get(), ModBlocks.BURNT_BRICK_CRACKED_PRESSURE_PLATE.get(), ModBlocks.BURNT_BRICK_CRACKED_PILLAR.get());
+        variants(out, ModBlocks.BURNT_COBBLESTONE.get(),
+                ModBlocks.BURNT_COBBLESTONE_STAIRS.get(), ModBlocks.BURNT_COBBLESTONE_SLAB.get(), ModBlocks.BURNT_COBBLESTONE_WALL.get(),
+                ModBlocks.BURNT_COBBLESTONE_FENCE.get(), ModBlocks.BURNT_COBBLESTONE_FENCE_GATE.get(),
+                ModBlocks.BURNT_COBBLESTONE_BUTTON.get(), ModBlocks.BURNT_COBBLESTONE_PRESSURE_PLATE.get(), ModBlocks.BURNT_COBBLESTONE_PILLAR.get());
+        variants(out, ModBlocks.BURNT_SMOOTH_STONE.get(),
+                ModBlocks.BURNT_SMOOTH_STONE_STAIRS.get(), ModBlocks.BURNT_SMOOTH_STONE_SLAB.get(), ModBlocks.BURNT_SMOOTH_STONE_WALL.get(),
+                ModBlocks.BURNT_SMOOTH_STONE_FENCE.get(), ModBlocks.BURNT_SMOOTH_STONE_FENCE_GATE.get(),
+                ModBlocks.BURNT_SMOOTH_STONE_BUTTON.get(), ModBlocks.BURNT_SMOOTH_STONE_PRESSURE_PLATE.get(), ModBlocks.BURNT_SMOOTH_STONE_PILLAR.get());
     }
 
     /** All stonecutter + crafting recipes derived from a single base block. */
@@ -89,7 +118,6 @@ public final class ModRecipeProvider extends RecipeProvider {
                           Block stair, Block slab, Block wall,
                           Block fence, Block gate,
                           Block button, Block plate, Block pillar) {
-        // Stonecutter 1:1 (slab 1:2 following vanilla convention)
         stonecut(out, RecipeCategory.BUILDING_BLOCKS, stair, base, 1);
         stonecut(out, RecipeCategory.BUILDING_BLOCKS, slab, base, 2);
         stonecut(out, RecipeCategory.BUILDING_BLOCKS, wall, base, 1);
@@ -99,24 +127,14 @@ public final class ModRecipeProvider extends RecipeProvider {
         stonecut(out, RecipeCategory.REDSTONE, plate, base, 1);
         stonecut(out, RecipeCategory.BUILDING_BLOCKS, pillar, base, 1);
 
-        // Shaped crafting
-        stairBuilder(stair, Ingredient.of(base))
-                .unlockedBy(hasTag(base), has(base))
-                .save(out);
+        stairBuilder(stair, Ingredient.of(base)).unlockedBy(hasTag(base), has(base)).save(out);
         slab(out, RecipeCategory.BUILDING_BLOCKS, slab, base);
         wall(out, RecipeCategory.BUILDING_BLOCKS, wall, base);
-        fenceBuilder(fence, Ingredient.of(base))
-                .unlockedBy(hasTag(base), has(base))
-                .save(out);
-        fenceGateBuilder(gate, Ingredient.of(base))
-                .unlockedBy(hasTag(base), has(base))
-                .save(out);
-        buttonBuilder(button, Ingredient.of(base))
-                .unlockedBy(hasTag(base), has(base))
-                .save(out);
+        fenceBuilder(fence, Ingredient.of(base)).unlockedBy(hasTag(base), has(base)).save(out);
+        fenceGateBuilder(gate, Ingredient.of(base)).unlockedBy(hasTag(base), has(base)).save(out);
+        buttonBuilder(button, Ingredient.of(base)).unlockedBy(hasTag(base), has(base)).save(out);
         pressurePlate(out, plate, base);
 
-        // Pillar shaped: 2 base stacked vertically -> 2 pillars (vanilla quartz pattern)
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, pillar, 2)
                 .define('#', base)
                 .pattern("#")
@@ -127,24 +145,14 @@ public final class ModRecipeProvider extends RecipeProvider {
 
     /** Chain conversions: cobble→stone→smooth, stone→bricks→cracked. */
     private void chain(RecipeOutput out, Block cobble, Block stone, Block smooth, Block bricks, Block cracked) {
-        // Smelting chain
         smelt(out, stone, cobble);
         smelt(out, smooth, stone);
         smelt(out, cracked, bricks);
-
-        // Bricks from stone: 2x2 packer gives 4 bricks from 4 stone
         twoByTwoPacker(out, RecipeCategory.BUILDING_BLOCKS, bricks, stone);
-
-        // Stonecutter between family variants
         stonecut(out, RecipeCategory.BUILDING_BLOCKS, bricks, stone, 1);
         stonecut(out, RecipeCategory.BUILDING_BLOCKS, smooth, stone, 1);
     }
 
-    /**
-     * Stonecutter recipe saved into the mod's own namespace. The vanilla
-     * {@code stonecutterResultFromBase} helper uses {@code save(out, String)}
-     * which defaults to the {@code minecraft} namespace.
-     */
     private void stonecut(RecipeOutput out, RecipeCategory category, Block result, Block base, int count) {
         String id = keyOf(result).getPath() + "_from_" + keyOf(base).getPath() + "_stonecutting";
         SingleItemRecipeBuilder.stonecutting(Ingredient.of(base), category, result, count)
@@ -166,9 +174,7 @@ public final class ModRecipeProvider extends RecipeProvider {
     }
 
     private static ResourceLocation keyOf(ItemLike item) {
-        if (item instanceof Block b) {
-            return BuiltInRegistries.BLOCK.getKey(b);
-        }
+        if (item instanceof Block b) return BuiltInRegistries.BLOCK.getKey(b);
         return BuiltInRegistries.ITEM.getKey(item.asItem());
     }
 

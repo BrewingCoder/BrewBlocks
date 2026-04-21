@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab_top",
-  "textures": {
-    "bottom": "brewblocks:block/abyssal_cobble",
-    "side": "brewblocks:block/abyssal_cobble",
-    "top": "brewblocks:block/abyssal_cobble"
-  }
-}

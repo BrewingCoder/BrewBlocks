@@ -53,114 +53,169 @@ public final class ModBlocks {
             "sticky_ore", StickyOreBlock::new, rockProps());
 
     // ---- Abyssal set ----
-    public static final DeferredBlock<Block> ABYSSAL = plain("abyssal");
-    public static final DeferredBlock<Block> ABYSSAL_BRICKS = plain("abyssal_bricks");
-    public static final DeferredBlock<Block> ABYSSAL_BRICKS_CRACKED = plain("abyssal_bricks_cracked");
-    public static final DeferredBlock<Block> ABYSSAL_COBBLE = plain("abyssal_cobble");
-    public static final DeferredBlock<Block> ABYSSAL_SMOOTH = plain("abyssal_smooth");
+    public static final DeferredBlock<Block> ABYSSAL_STONE             = plain("abyssal_stone");
+    public static final DeferredBlock<Block> ABYSSAL_BRICKS            = plain("abyssal_bricks");
+    public static final DeferredBlock<Block> ABYSSAL_BRICKS_CRACKED    = plain("abyssal_bricks_cracked");
+    public static final DeferredBlock<Block> ABYSSAL_COBBLESTONE       = plain("abyssal_cobblestone");
+    public static final DeferredBlock<Block> ABYSSAL_SMOOTH_STONE      = plain("abyssal_smooth_stone");
 
-    public static final DeferredBlock<StairBlock> ABYSSAL_STAIRS = stair("abyssal_stairs", ABYSSAL);
-    public static final DeferredBlock<StairBlock> ABYSSAL_BRICK_STAIRS = stair("abyssal_brick_stairs", ABYSSAL_BRICKS);
-    public static final DeferredBlock<StairBlock> ABYSSAL_BRICK_CRACKED_STAIRS = stair("abyssal_brick_cracked_stairs", ABYSSAL_BRICKS_CRACKED);
-    public static final DeferredBlock<StairBlock> ABYSSAL_COBBLE_STAIRS = stair("abyssal_cobble_stairs", ABYSSAL_COBBLE);
-    public static final DeferredBlock<StairBlock> ABYSSAL_SMOOTH_STAIRS = stair("abyssal_smooth_stairs", ABYSSAL_SMOOTH);
+    public static final DeferredBlock<StairBlock> ABYSSAL_STONE_STAIRS             = stair("abyssal_stone_stairs", ABYSSAL_STONE);
+    public static final DeferredBlock<StairBlock> ABYSSAL_BRICK_STAIRS             = stair("abyssal_brick_stairs", ABYSSAL_BRICKS);
+    public static final DeferredBlock<StairBlock> ABYSSAL_BRICK_CRACKED_STAIRS     = stair("abyssal_brick_cracked_stairs", ABYSSAL_BRICKS_CRACKED);
+    public static final DeferredBlock<StairBlock> ABYSSAL_COBBLESTONE_STAIRS       = stair("abyssal_cobblestone_stairs", ABYSSAL_COBBLESTONE);
+    public static final DeferredBlock<StairBlock> ABYSSAL_SMOOTH_STONE_STAIRS      = stair("abyssal_smooth_stone_stairs", ABYSSAL_SMOOTH_STONE);
 
-    public static final DeferredBlock<SlabBlock> ABYSSAL_SLAB = slab("abyssal_slab");
-    public static final DeferredBlock<SlabBlock> ABYSSAL_BRICK_SLAB = slab("abyssal_brick_slab");
-    public static final DeferredBlock<SlabBlock> ABYSSAL_BRICK_CRACKED_SLAB = slab("abyssal_brick_cracked_slab");
-    public static final DeferredBlock<SlabBlock> ABYSSAL_COBBLE_SLAB = slab("abyssal_cobble_slab");
-    public static final DeferredBlock<SlabBlock> ABYSSAL_SMOOTH_SLAB = slab("abyssal_smooth_slab");
+    public static final DeferredBlock<SlabBlock> ABYSSAL_STONE_SLAB                = slab("abyssal_stone_slab");
+    public static final DeferredBlock<SlabBlock> ABYSSAL_BRICK_SLAB                = slab("abyssal_brick_slab");
+    public static final DeferredBlock<SlabBlock> ABYSSAL_BRICK_CRACKED_SLAB        = slab("abyssal_brick_cracked_slab");
+    public static final DeferredBlock<SlabBlock> ABYSSAL_COBBLESTONE_SLAB          = slab("abyssal_cobblestone_slab");
+    public static final DeferredBlock<SlabBlock> ABYSSAL_SMOOTH_STONE_SLAB         = slab("abyssal_smooth_stone_slab");
 
-    public static final DeferredBlock<WallBlock> ABYSSAL_WALL = wall("abyssal_wall");
-    public static final DeferredBlock<WallBlock> ABYSSAL_BRICK_WALL = wall("abyssal_brick_wall");
-    public static final DeferredBlock<WallBlock> ABYSSAL_BRICK_CRACKED_WALL = wall("abyssal_brick_cracked_wall");
-    public static final DeferredBlock<WallBlock> ABYSSAL_COBBLE_WALL = wall("abyssal_cobble_wall");
-    public static final DeferredBlock<WallBlock> ABYSSAL_SMOOTH_WALL = wall("abyssal_smooth_wall");
+    public static final DeferredBlock<WallBlock> ABYSSAL_STONE_WALL                = wall("abyssal_stone_wall");
+    public static final DeferredBlock<WallBlock> ABYSSAL_BRICK_WALL                = wall("abyssal_brick_wall");
+    public static final DeferredBlock<WallBlock> ABYSSAL_BRICK_CRACKED_WALL        = wall("abyssal_brick_cracked_wall");
+    public static final DeferredBlock<WallBlock> ABYSSAL_COBBLESTONE_WALL          = wall("abyssal_cobblestone_wall");
+    public static final DeferredBlock<WallBlock> ABYSSAL_SMOOTH_STONE_WALL         = wall("abyssal_smooth_stone_wall");
 
-    public static final DeferredBlock<FenceBlock> ABYSSAL_FENCE = fence("abyssal_fence");
-    public static final DeferredBlock<FenceBlock> ABYSSAL_BRICK_FENCE = fence("abyssal_brick_fence");
-    public static final DeferredBlock<FenceBlock> ABYSSAL_BRICK_CRACKED_FENCE = fence("abyssal_brick_cracked_fence");
-    public static final DeferredBlock<FenceBlock> ABYSSAL_COBBLE_FENCE = fence("abyssal_cobble_fence");
-    public static final DeferredBlock<FenceBlock> ABYSSAL_SMOOTH_FENCE = fence("abyssal_smooth_fence");
+    public static final DeferredBlock<FenceBlock> ABYSSAL_STONE_FENCE              = fence("abyssal_stone_fence");
+    public static final DeferredBlock<FenceBlock> ABYSSAL_BRICK_FENCE              = fence("abyssal_brick_fence");
+    public static final DeferredBlock<FenceBlock> ABYSSAL_BRICK_CRACKED_FENCE      = fence("abyssal_brick_cracked_fence");
+    public static final DeferredBlock<FenceBlock> ABYSSAL_COBBLESTONE_FENCE        = fence("abyssal_cobblestone_fence");
+    public static final DeferredBlock<FenceBlock> ABYSSAL_SMOOTH_STONE_FENCE       = fence("abyssal_smooth_stone_fence");
 
-    public static final DeferredBlock<FenceGateBlock> ABYSSAL_FENCE_GATE = fenceGate("abyssal_fence_gate");
-    public static final DeferredBlock<FenceGateBlock> ABYSSAL_BRICK_FENCE_GATE = fenceGate("abyssal_brick_fence_gate");
-    public static final DeferredBlock<FenceGateBlock> ABYSSAL_BRICK_CRACKED_FENCE_GATE = fenceGate("abyssal_brick_cracked_fence_gate");
-    public static final DeferredBlock<FenceGateBlock> ABYSSAL_COBBLE_FENCE_GATE = fenceGate("abyssal_cobble_fence_gate");
-    public static final DeferredBlock<FenceGateBlock> ABYSSAL_SMOOTH_FENCE_GATE = fenceGate("abyssal_smooth_fence_gate");
+    public static final DeferredBlock<FenceGateBlock> ABYSSAL_STONE_FENCE_GATE             = fenceGate("abyssal_stone_fence_gate");
+    public static final DeferredBlock<FenceGateBlock> ABYSSAL_BRICK_FENCE_GATE             = fenceGate("abyssal_brick_fence_gate");
+    public static final DeferredBlock<FenceGateBlock> ABYSSAL_BRICK_CRACKED_FENCE_GATE     = fenceGate("abyssal_brick_cracked_fence_gate");
+    public static final DeferredBlock<FenceGateBlock> ABYSSAL_COBBLESTONE_FENCE_GATE       = fenceGate("abyssal_cobblestone_fence_gate");
+    public static final DeferredBlock<FenceGateBlock> ABYSSAL_SMOOTH_STONE_FENCE_GATE      = fenceGate("abyssal_smooth_stone_fence_gate");
 
-    public static final DeferredBlock<ButtonBlock> ABYSSAL_BUTTON = button("abyssal_button");
-    public static final DeferredBlock<ButtonBlock> ABYSSAL_BRICK_BUTTON = button("abyssal_brick_button");
-    public static final DeferredBlock<ButtonBlock> ABYSSAL_BRICK_CRACKED_BUTTON = button("abyssal_brick_cracked_button");
-    public static final DeferredBlock<ButtonBlock> ABYSSAL_COBBLE_BUTTON = button("abyssal_cobble_button");
-    public static final DeferredBlock<ButtonBlock> ABYSSAL_SMOOTH_BUTTON = button("abyssal_smooth_button");
+    public static final DeferredBlock<ButtonBlock> ABYSSAL_STONE_BUTTON            = button("abyssal_stone_button");
+    public static final DeferredBlock<ButtonBlock> ABYSSAL_BRICK_BUTTON            = button("abyssal_brick_button");
+    public static final DeferredBlock<ButtonBlock> ABYSSAL_BRICK_CRACKED_BUTTON    = button("abyssal_brick_cracked_button");
+    public static final DeferredBlock<ButtonBlock> ABYSSAL_COBBLESTONE_BUTTON      = button("abyssal_cobblestone_button");
+    public static final DeferredBlock<ButtonBlock> ABYSSAL_SMOOTH_STONE_BUTTON     = button("abyssal_smooth_stone_button");
 
-    public static final DeferredBlock<PressurePlateBlock> ABYSSAL_PRESSURE_PLATE = plate("abyssal_pressure_plate");
-    public static final DeferredBlock<PressurePlateBlock> ABYSSAL_BRICK_PRESSURE_PLATE = plate("abyssal_brick_pressure_plate");
-    public static final DeferredBlock<PressurePlateBlock> ABYSSAL_BRICK_CRACKED_PRESSURE_PLATE = plate("abyssal_brick_cracked_pressure_plate");
-    public static final DeferredBlock<PressurePlateBlock> ABYSSAL_COBBLE_PRESSURE_PLATE = plate("abyssal_cobble_pressure_plate");
-    public static final DeferredBlock<PressurePlateBlock> ABYSSAL_SMOOTH_PRESSURE_PLATE = plate("abyssal_smooth_pressure_plate");
+    public static final DeferredBlock<PressurePlateBlock> ABYSSAL_STONE_PRESSURE_PLATE          = plate("abyssal_stone_pressure_plate");
+    public static final DeferredBlock<PressurePlateBlock> ABYSSAL_BRICK_PRESSURE_PLATE          = plate("abyssal_brick_pressure_plate");
+    public static final DeferredBlock<PressurePlateBlock> ABYSSAL_BRICK_CRACKED_PRESSURE_PLATE  = plate("abyssal_brick_cracked_pressure_plate");
+    public static final DeferredBlock<PressurePlateBlock> ABYSSAL_COBBLESTONE_PRESSURE_PLATE    = plate("abyssal_cobblestone_pressure_plate");
+    public static final DeferredBlock<PressurePlateBlock> ABYSSAL_SMOOTH_STONE_PRESSURE_PLATE   = plate("abyssal_smooth_stone_pressure_plate");
 
-    public static final DeferredBlock<RotatedPillarBlock> ABYSSAL_PILLAR = pillar("abyssal_pillar");
-    public static final DeferredBlock<RotatedPillarBlock> ABYSSAL_BRICK_PILLAR = pillar("abyssal_brick_pillar");
-    public static final DeferredBlock<RotatedPillarBlock> ABYSSAL_BRICK_CRACKED_PILLAR = pillar("abyssal_brick_cracked_pillar");
-    public static final DeferredBlock<RotatedPillarBlock> ABYSSAL_COBBLE_PILLAR = pillar("abyssal_cobble_pillar");
-    public static final DeferredBlock<RotatedPillarBlock> ABYSSAL_SMOOTH_PILLAR = pillar("abyssal_smooth_pillar");
+    public static final DeferredBlock<RotatedPillarBlock> ABYSSAL_STONE_PILLAR             = pillar("abyssal_stone_pillar");
+    public static final DeferredBlock<RotatedPillarBlock> ABYSSAL_BRICK_PILLAR             = pillar("abyssal_brick_pillar");
+    public static final DeferredBlock<RotatedPillarBlock> ABYSSAL_BRICK_CRACKED_PILLAR     = pillar("abyssal_brick_cracked_pillar");
+    public static final DeferredBlock<RotatedPillarBlock> ABYSSAL_COBBLESTONE_PILLAR       = pillar("abyssal_cobblestone_pillar");
+    public static final DeferredBlock<RotatedPillarBlock> ABYSSAL_SMOOTH_STONE_PILLAR      = pillar("abyssal_smooth_stone_pillar");
 
     // ---- Quarried set ----
-    public static final DeferredBlock<Block> QUARRIED = plain("quarried");
-    public static final DeferredBlock<Block> QUARRIED_BRICKS = plain("quarried_bricks");
-    public static final DeferredBlock<Block> QUARRIED_BRICKS_CRACKED = plain("quarried_bricks_cracked");
-    public static final DeferredBlock<Block> QUARRIED_COBBLE = plain("quarried_cobble");
-    public static final DeferredBlock<Block> QUARRIED_SMOOTH = plain("quarried_smooth");
+    public static final DeferredBlock<Block> QUARRIED_STONE            = plain("quarried_stone");
+    public static final DeferredBlock<Block> QUARRIED_BRICKS           = plain("quarried_bricks");
+    public static final DeferredBlock<Block> QUARRIED_BRICKS_CRACKED   = plain("quarried_bricks_cracked");
+    public static final DeferredBlock<Block> QUARRIED_COBBLESTONE      = plain("quarried_cobblestone");
+    public static final DeferredBlock<Block> QUARRIED_SMOOTH_STONE     = plain("quarried_smooth_stone");
 
-    public static final DeferredBlock<StairBlock> QUARRIED_STAIRS = stair("quarried_stairs", QUARRIED);
-    public static final DeferredBlock<StairBlock> QUARRIED_BRICKS_STAIRS = stair("quarried_bricks_stairs", QUARRIED_BRICKS);
-    public static final DeferredBlock<StairBlock> QUARRIED_BRICKS_CRACKED_STAIRS = stair("quarried_bricks_cracked_stairs", QUARRIED_BRICKS_CRACKED);
-    public static final DeferredBlock<StairBlock> QUARRIED_COBBLE_STAIRS = stair("quarried_cobble_stairs", QUARRIED_COBBLE);
-    public static final DeferredBlock<StairBlock> QUARRIED_SMOOTH_STAIRS = stair("quarried_smooth_stairs", QUARRIED_SMOOTH);
+    public static final DeferredBlock<StairBlock> QUARRIED_STONE_STAIRS            = stair("quarried_stone_stairs", QUARRIED_STONE);
+    public static final DeferredBlock<StairBlock> QUARRIED_BRICK_STAIRS            = stair("quarried_brick_stairs", QUARRIED_BRICKS);
+    public static final DeferredBlock<StairBlock> QUARRIED_BRICK_CRACKED_STAIRS    = stair("quarried_brick_cracked_stairs", QUARRIED_BRICKS_CRACKED);
+    public static final DeferredBlock<StairBlock> QUARRIED_COBBLESTONE_STAIRS      = stair("quarried_cobblestone_stairs", QUARRIED_COBBLESTONE);
+    public static final DeferredBlock<StairBlock> QUARRIED_SMOOTH_STONE_STAIRS     = stair("quarried_smooth_stone_stairs", QUARRIED_SMOOTH_STONE);
 
-    public static final DeferredBlock<SlabBlock> QUARRIED_SLAB = slab("quarried_slab");
-    public static final DeferredBlock<SlabBlock> QUARRIED_BRICKS_SLAB = slab("quarried_bricks_slab");
-    public static final DeferredBlock<SlabBlock> QUARRIED_BRICKS_CRACKED_SLAB = slab("quarried_bricks_cracked_slab");
-    public static final DeferredBlock<SlabBlock> QUARRIED_COBBLE_SLAB = slab("quarried_cobble_slab");
-    public static final DeferredBlock<SlabBlock> QUARRIED_SMOOTH_SLAB = slab("quarried_smooth_slab");
+    public static final DeferredBlock<SlabBlock> QUARRIED_STONE_SLAB               = slab("quarried_stone_slab");
+    public static final DeferredBlock<SlabBlock> QUARRIED_BRICK_SLAB               = slab("quarried_brick_slab");
+    public static final DeferredBlock<SlabBlock> QUARRIED_BRICK_CRACKED_SLAB       = slab("quarried_brick_cracked_slab");
+    public static final DeferredBlock<SlabBlock> QUARRIED_COBBLESTONE_SLAB         = slab("quarried_cobblestone_slab");
+    public static final DeferredBlock<SlabBlock> QUARRIED_SMOOTH_STONE_SLAB        = slab("quarried_smooth_stone_slab");
 
-    public static final DeferredBlock<WallBlock> QUARRIED_WALL = wall("quarried_wall");
-    public static final DeferredBlock<WallBlock> QUARRIED_BRICKS_WALL = wall("quarried_bricks_wall");
-    public static final DeferredBlock<WallBlock> QUARRIED_BRICKS_CRACKED_WALL = wall("quarried_bricks_cracked_wall");
-    public static final DeferredBlock<WallBlock> QUARRIED_COBBLE_WALL = wall("quarried_cobble_wall");
-    public static final DeferredBlock<WallBlock> QUARRIED_SMOOTH_WALL = wall("quarried_smooth_wall");
+    public static final DeferredBlock<WallBlock> QUARRIED_STONE_WALL               = wall("quarried_stone_wall");
+    public static final DeferredBlock<WallBlock> QUARRIED_BRICK_WALL               = wall("quarried_brick_wall");
+    public static final DeferredBlock<WallBlock> QUARRIED_BRICK_CRACKED_WALL       = wall("quarried_brick_cracked_wall");
+    public static final DeferredBlock<WallBlock> QUARRIED_COBBLESTONE_WALL         = wall("quarried_cobblestone_wall");
+    public static final DeferredBlock<WallBlock> QUARRIED_SMOOTH_STONE_WALL        = wall("quarried_smooth_stone_wall");
 
-    public static final DeferredBlock<FenceBlock> QUARRIED_FENCE = fence("quarried_fence");
-    public static final DeferredBlock<FenceBlock> QUARRIED_BRICKS_FENCE = fence("quarried_bricks_fence");
-    public static final DeferredBlock<FenceBlock> QUARRIED_BRICKS_CRACKED_FENCE = fence("quarried_bricks_cracked_fence");
-    public static final DeferredBlock<FenceBlock> QUARRIED_COBBLE_FENCE = fence("quarried_cobble_fence");
-    public static final DeferredBlock<FenceBlock> QUARRIED_SMOOTH_FENCE = fence("quarried_smooth_fence");
+    public static final DeferredBlock<FenceBlock> QUARRIED_STONE_FENCE             = fence("quarried_stone_fence");
+    public static final DeferredBlock<FenceBlock> QUARRIED_BRICK_FENCE             = fence("quarried_brick_fence");
+    public static final DeferredBlock<FenceBlock> QUARRIED_BRICK_CRACKED_FENCE     = fence("quarried_brick_cracked_fence");
+    public static final DeferredBlock<FenceBlock> QUARRIED_COBBLESTONE_FENCE       = fence("quarried_cobblestone_fence");
+    public static final DeferredBlock<FenceBlock> QUARRIED_SMOOTH_STONE_FENCE      = fence("quarried_smooth_stone_fence");
 
-    public static final DeferredBlock<FenceGateBlock> QUARRIED_FENCE_GATE = fenceGate("quarried_fence_gate");
-    public static final DeferredBlock<FenceGateBlock> QUARRIED_BRICKS_FENCE_GATE = fenceGate("quarried_bricks_fence_gate");
-    public static final DeferredBlock<FenceGateBlock> QUARRIED_BRICKS_CRACKED_FENCE_GATE = fenceGate("quarried_bricks_cracked_fence_gate");
-    public static final DeferredBlock<FenceGateBlock> QUARRIED_COBBLE_FENCE_GATE = fenceGate("quarried_cobble_fence_gate");
-    public static final DeferredBlock<FenceGateBlock> QUARRIED_SMOOTH_FENCE_GATE = fenceGate("quarried_smooth_fence_gate");
+    public static final DeferredBlock<FenceGateBlock> QUARRIED_STONE_FENCE_GATE            = fenceGate("quarried_stone_fence_gate");
+    public static final DeferredBlock<FenceGateBlock> QUARRIED_BRICK_FENCE_GATE            = fenceGate("quarried_brick_fence_gate");
+    public static final DeferredBlock<FenceGateBlock> QUARRIED_BRICK_CRACKED_FENCE_GATE    = fenceGate("quarried_brick_cracked_fence_gate");
+    public static final DeferredBlock<FenceGateBlock> QUARRIED_COBBLESTONE_FENCE_GATE      = fenceGate("quarried_cobblestone_fence_gate");
+    public static final DeferredBlock<FenceGateBlock> QUARRIED_SMOOTH_STONE_FENCE_GATE     = fenceGate("quarried_smooth_stone_fence_gate");
 
-    public static final DeferredBlock<ButtonBlock> QUARRIED_BUTTON = button("quarried_button");
-    public static final DeferredBlock<ButtonBlock> QUARRIED_BRICKS_BUTTON = button("quarried_bricks_button");
-    public static final DeferredBlock<ButtonBlock> QUARRIED_BRICKS_CRACKED_BUTTON = button("quarried_bricks_cracked_button");
-    public static final DeferredBlock<ButtonBlock> QUARRIED_COBBLE_BUTTON = button("quarried_cobble_button");
-    public static final DeferredBlock<ButtonBlock> QUARRIED_SMOOTH_BUTTON = button("quarried_smooth_button");
+    public static final DeferredBlock<ButtonBlock> QUARRIED_STONE_BUTTON           = button("quarried_stone_button");
+    public static final DeferredBlock<ButtonBlock> QUARRIED_BRICK_BUTTON           = button("quarried_brick_button");
+    public static final DeferredBlock<ButtonBlock> QUARRIED_BRICK_CRACKED_BUTTON   = button("quarried_brick_cracked_button");
+    public static final DeferredBlock<ButtonBlock> QUARRIED_COBBLESTONE_BUTTON     = button("quarried_cobblestone_button");
+    public static final DeferredBlock<ButtonBlock> QUARRIED_SMOOTH_STONE_BUTTON    = button("quarried_smooth_stone_button");
 
-    public static final DeferredBlock<PressurePlateBlock> QUARRIED_PRESSURE_PLATE = plate("quarried_pressure_plate");
-    public static final DeferredBlock<PressurePlateBlock> QUARRIED_BRICKS_PRESSURE_PLATE = plate("quarried_bricks_pressure_plate");
-    public static final DeferredBlock<PressurePlateBlock> QUARRIED_BRICKS_CRACKED_PRESSURE_PLATE = plate("quarried_bricks_cracked_pressure_plate");
-    public static final DeferredBlock<PressurePlateBlock> QUARRIED_COBBLE_PRESSURE_PLATE = plate("quarried_cobble_pressure_plate");
-    public static final DeferredBlock<PressurePlateBlock> QUARRIED_SMOOTH_PRESSURE_PLATE = plate("quarried_smooth_pressure_plate");
+    public static final DeferredBlock<PressurePlateBlock> QUARRIED_STONE_PRESSURE_PLATE         = plate("quarried_stone_pressure_plate");
+    public static final DeferredBlock<PressurePlateBlock> QUARRIED_BRICK_PRESSURE_PLATE         = plate("quarried_brick_pressure_plate");
+    public static final DeferredBlock<PressurePlateBlock> QUARRIED_BRICK_CRACKED_PRESSURE_PLATE = plate("quarried_brick_cracked_pressure_plate");
+    public static final DeferredBlock<PressurePlateBlock> QUARRIED_COBBLESTONE_PRESSURE_PLATE   = plate("quarried_cobblestone_pressure_plate");
+    public static final DeferredBlock<PressurePlateBlock> QUARRIED_SMOOTH_STONE_PRESSURE_PLATE  = plate("quarried_smooth_stone_pressure_plate");
 
-    public static final DeferredBlock<RotatedPillarBlock> QUARRIED_PILLAR = pillar("quarried_pillar");
-    public static final DeferredBlock<RotatedPillarBlock> QUARRIED_BRICKS_PILLAR = pillar("quarried_bricks_pillar");
-    public static final DeferredBlock<RotatedPillarBlock> QUARRIED_BRICKS_CRACKED_PILLAR = pillar("quarried_bricks_cracked_pillar");
-    public static final DeferredBlock<RotatedPillarBlock> QUARRIED_COBBLE_PILLAR = pillar("quarried_cobble_pillar");
-    public static final DeferredBlock<RotatedPillarBlock> QUARRIED_SMOOTH_PILLAR = pillar("quarried_smooth_pillar");
+    public static final DeferredBlock<RotatedPillarBlock> QUARRIED_STONE_PILLAR            = pillar("quarried_stone_pillar");
+    public static final DeferredBlock<RotatedPillarBlock> QUARRIED_BRICK_PILLAR            = pillar("quarried_brick_pillar");
+    public static final DeferredBlock<RotatedPillarBlock> QUARRIED_BRICK_CRACKED_PILLAR    = pillar("quarried_brick_cracked_pillar");
+    public static final DeferredBlock<RotatedPillarBlock> QUARRIED_COBBLESTONE_PILLAR      = pillar("quarried_cobblestone_pillar");
+    public static final DeferredBlock<RotatedPillarBlock> QUARRIED_SMOOTH_STONE_PILLAR     = pillar("quarried_smooth_stone_pillar");
+
+    // ---- Burnt set ----
+    public static final DeferredBlock<Block> BURNT_STONE               = plain("burnt_stone");
+    public static final DeferredBlock<Block> BURNT_BRICKS              = plain("burnt_bricks");
+    public static final DeferredBlock<Block> BURNT_BRICKS_CRACKED      = plain("burnt_bricks_cracked");
+    public static final DeferredBlock<Block> BURNT_COBBLESTONE         = plain("burnt_cobblestone");
+    public static final DeferredBlock<Block> BURNT_SMOOTH_STONE        = plain("burnt_smooth_stone");
+
+    public static final DeferredBlock<StairBlock> BURNT_STONE_STAIRS               = stair("burnt_stone_stairs", BURNT_STONE);
+    public static final DeferredBlock<StairBlock> BURNT_BRICK_STAIRS               = stair("burnt_brick_stairs", BURNT_BRICKS);
+    public static final DeferredBlock<StairBlock> BURNT_BRICK_CRACKED_STAIRS       = stair("burnt_brick_cracked_stairs", BURNT_BRICKS_CRACKED);
+    public static final DeferredBlock<StairBlock> BURNT_COBBLESTONE_STAIRS         = stair("burnt_cobblestone_stairs", BURNT_COBBLESTONE);
+    public static final DeferredBlock<StairBlock> BURNT_SMOOTH_STONE_STAIRS        = stair("burnt_smooth_stone_stairs", BURNT_SMOOTH_STONE);
+
+    public static final DeferredBlock<SlabBlock> BURNT_STONE_SLAB                  = slab("burnt_stone_slab");
+    public static final DeferredBlock<SlabBlock> BURNT_BRICK_SLAB                  = slab("burnt_brick_slab");
+    public static final DeferredBlock<SlabBlock> BURNT_BRICK_CRACKED_SLAB          = slab("burnt_brick_cracked_slab");
+    public static final DeferredBlock<SlabBlock> BURNT_COBBLESTONE_SLAB            = slab("burnt_cobblestone_slab");
+    public static final DeferredBlock<SlabBlock> BURNT_SMOOTH_STONE_SLAB           = slab("burnt_smooth_stone_slab");
+
+    public static final DeferredBlock<WallBlock> BURNT_STONE_WALL                  = wall("burnt_stone_wall");
+    public static final DeferredBlock<WallBlock> BURNT_BRICK_WALL                  = wall("burnt_brick_wall");
+    public static final DeferredBlock<WallBlock> BURNT_BRICK_CRACKED_WALL          = wall("burnt_brick_cracked_wall");
+    public static final DeferredBlock<WallBlock> BURNT_COBBLESTONE_WALL            = wall("burnt_cobblestone_wall");
+    public static final DeferredBlock<WallBlock> BURNT_SMOOTH_STONE_WALL           = wall("burnt_smooth_stone_wall");
+
+    public static final DeferredBlock<FenceBlock> BURNT_STONE_FENCE                = fence("burnt_stone_fence");
+    public static final DeferredBlock<FenceBlock> BURNT_BRICK_FENCE                = fence("burnt_brick_fence");
+    public static final DeferredBlock<FenceBlock> BURNT_BRICK_CRACKED_FENCE        = fence("burnt_brick_cracked_fence");
+    public static final DeferredBlock<FenceBlock> BURNT_COBBLESTONE_FENCE          = fence("burnt_cobblestone_fence");
+    public static final DeferredBlock<FenceBlock> BURNT_SMOOTH_STONE_FENCE         = fence("burnt_smooth_stone_fence");
+
+    public static final DeferredBlock<FenceGateBlock> BURNT_STONE_FENCE_GATE               = fenceGate("burnt_stone_fence_gate");
+    public static final DeferredBlock<FenceGateBlock> BURNT_BRICK_FENCE_GATE               = fenceGate("burnt_brick_fence_gate");
+    public static final DeferredBlock<FenceGateBlock> BURNT_BRICK_CRACKED_FENCE_GATE       = fenceGate("burnt_brick_cracked_fence_gate");
+    public static final DeferredBlock<FenceGateBlock> BURNT_COBBLESTONE_FENCE_GATE         = fenceGate("burnt_cobblestone_fence_gate");
+    public static final DeferredBlock<FenceGateBlock> BURNT_SMOOTH_STONE_FENCE_GATE        = fenceGate("burnt_smooth_stone_fence_gate");
+
+    public static final DeferredBlock<ButtonBlock> BURNT_STONE_BUTTON              = button("burnt_stone_button");
+    public static final DeferredBlock<ButtonBlock> BURNT_BRICK_BUTTON              = button("burnt_brick_button");
+    public static final DeferredBlock<ButtonBlock> BURNT_BRICK_CRACKED_BUTTON      = button("burnt_brick_cracked_button");
+    public static final DeferredBlock<ButtonBlock> BURNT_COBBLESTONE_BUTTON        = button("burnt_cobblestone_button");
+    public static final DeferredBlock<ButtonBlock> BURNT_SMOOTH_STONE_BUTTON       = button("burnt_smooth_stone_button");
+
+    public static final DeferredBlock<PressurePlateBlock> BURNT_STONE_PRESSURE_PLATE            = plate("burnt_stone_pressure_plate");
+    public static final DeferredBlock<PressurePlateBlock> BURNT_BRICK_PRESSURE_PLATE            = plate("burnt_brick_pressure_plate");
+    public static final DeferredBlock<PressurePlateBlock> BURNT_BRICK_CRACKED_PRESSURE_PLATE    = plate("burnt_brick_cracked_pressure_plate");
+    public static final DeferredBlock<PressurePlateBlock> BURNT_COBBLESTONE_PRESSURE_PLATE      = plate("burnt_cobblestone_pressure_plate");
+    public static final DeferredBlock<PressurePlateBlock> BURNT_SMOOTH_STONE_PRESSURE_PLATE     = plate("burnt_smooth_stone_pressure_plate");
+
+    public static final DeferredBlock<RotatedPillarBlock> BURNT_STONE_PILLAR               = pillar("burnt_stone_pillar");
+    public static final DeferredBlock<RotatedPillarBlock> BURNT_BRICK_PILLAR               = pillar("burnt_brick_pillar");
+    public static final DeferredBlock<RotatedPillarBlock> BURNT_BRICK_CRACKED_PILLAR       = pillar("burnt_brick_cracked_pillar");
+    public static final DeferredBlock<RotatedPillarBlock> BURNT_COBBLESTONE_PILLAR         = pillar("burnt_cobblestone_pillar");
+    public static final DeferredBlock<RotatedPillarBlock> BURNT_SMOOTH_STONE_PILLAR        = pillar("burnt_smooth_stone_pillar");
 
     private static DeferredBlock<Block> plain(String name) {
         return REGISTRY.registerBlock(name, Block::new, rockProps());

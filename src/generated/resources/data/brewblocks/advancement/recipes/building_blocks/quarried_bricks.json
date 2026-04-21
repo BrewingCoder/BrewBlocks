@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_quarried": {
+    "has_quarried_stone": {
       "conditions": {
         "items": [
           {
-            "items": "brewblocks:quarried"
+            "items": "brewblocks:quarried_stone"
           }
         ]
       },
@@ -21,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_quarried"
+      "has_quarried_stone"
     ]
   ],
   "rewards": {

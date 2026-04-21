@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "brewblocks:block/burnt_smooth_stone",
+    "side": "brewblocks:block/burnt_smooth_stone"
+  }
+}

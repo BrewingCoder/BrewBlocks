@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "ingredients": [
+    {
+      "item": "brewblocks:burnt_cobblestone"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "brewblocks:burnt_cobblestone_button"
+  }
+}
