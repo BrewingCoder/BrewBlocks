@@ -67,9 +67,18 @@ configurations {
 repositories {
     mavenLocal()
     mavenCentral()
+    maven {
+        name = 'TheIllusiveC4 (Curios)'
+        url = 'https://maven.theillusivec4.top/'
+    }
 }
 
 dependencies {
+    // Curios API — optional soft-dep. compileOnly against the slim `:api` classifier
+    // so we don't pull the full mod into the build jar. runtimeOnly loads the full
+    // mod in dev so our integration actually executes in `runClient`.
+    compileOnly "top.theillusivec4.curios:curios-neoforge:9.5.1+1.21.1:api"
+    runtimeOnly "top.theillusivec4.curios:curios-neoforge:9.5.1+1.21.1"
 }
 
 tasks.withType(ProcessResources).configureEach {

@@ -8,6 +8,7 @@ import com.brewingcoder.brewblocks.registry.ModTabs;
 import net.minecraft.resources.ResourceLocation;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
+import net.neoforged.fml.ModList;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.config.ModConfig;
 import org.slf4j.Logger;
@@ -25,6 +26,12 @@ public final class BrewBlocks {
         ModArmorMaterials.REGISTRY.register(modBus);
 
         container.registerConfig(ModConfig.Type.COMMON, Configs.COMMON_SPEC, MODID + "-common.toml");
+
+        // Curios is an optional dep — only touch the integration class if it's loaded,
+        // otherwise the JVM would try to resolve top.theillusivec4.* and fail.
+        if (ModList.get().isLoaded("curios")) {
+            com.brewingcoder.brewblocks.curios.CuriosIntegration.init(modBus);
+        }
 
         LOGGER.info("BrewBlocks booting on NeoForge 1.21.1");
     }
