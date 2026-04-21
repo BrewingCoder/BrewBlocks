@@ -1,37 +1,35 @@
 package com.brewingcoder.brewblocks;
 
 import com.brewingcoder.brewblocks.config.Configs;
-import com.brewingcoder.brewblocks.item.SlimeBounceBootsItem;
-import com.brewingcoder.brewblocks.world.IFeatures;
-import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import com.brewingcoder.brewblocks.registry.ModArmorMaterials;
+import com.brewingcoder.brewblocks.registry.ModBlocks;
+import com.brewingcoder.brewblocks.registry.ModItems;
+import com.brewingcoder.brewblocks.registry.ModTabs;
+import net.minecraft.resources.ResourceLocation;
+import net.neoforged.bus.api.IEventBus;
+import net.neoforged.fml.ModContainer;
+import net.neoforged.fml.common.Mod;
+import net.neoforged.fml.config.ModConfig;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
-import static com.brewingcoder.brewteamlib.BrewTeamLib.addEventListener;
-import static com.brewingcoder.brewteamlib.BrewTeamLib.addModListener;
-
-@SuppressWarnings("unused")
 @Mod(BrewBlocks.MODID)
-public class BrewBlocks
-{
+public final class BrewBlocks {
     public static final String MODID = "brewblocks";
-    public static final Logger LOGGER = LogManager.getLogger(MODID);
+    public static final Logger LOGGER = LoggerFactory.getLogger(MODID);
 
-    public BrewBlocks() {
-        addModListener(this::commonSetup);
-        addModListener(this::clientSetup);
-        addEventListener(SlimeBounceBootsItem::onLivingFall);
-        Configs.register();
+    public BrewBlocks(IEventBus modBus, ModContainer container) {
+        ModBlocks.REGISTRY.register(modBus);
+        ModItems.REGISTRY.register(modBus);
+        ModTabs.REGISTRY.register(modBus);
+        ModArmorMaterials.REGISTRY.register(modBus);
+
+        container.registerConfig(ModConfig.Type.COMMON, Configs.COMMON_SPEC, MODID + "-common.toml");
+
+        LOGGER.info("BrewBlocks booting on NeoForge 1.21.1");
     }
 
-    void commonSetup(final FMLCommonSetupEvent event) {
-        IFeatures.register();
+    public static ResourceLocation id(String path) {
+        return ResourceLocation.fromNamespaceAndPath(MODID, path);
     }
-
-    void clientSetup(final FMLClientSetupEvent event) {
-    }
-
 }

@@ -1,8 +1,0 @@
-{
-  "parent": "block/stairs",
-  "textures": {
-    "bottom": "brewblocks:block/abyssal_bricks_cracked",
-    "top": "brewblocks:block/abyssal_bricks_cracked",
-    "side": "brewblocks:block/abyssal_bricks_cracked"
-  }
-}

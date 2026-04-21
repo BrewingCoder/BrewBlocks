@@ -1,48 +1,62 @@
 package com.brewingcoder.brewblocks.item;
 
-import com.brewingcoder.brewblocks.entity.player.PlayerBounceHandler;
-import net.minecraft.entity.EntityType;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.inventory.EquipmentSlotType;
-import net.minecraft.item.ArmorItem;
-import net.minecraft.item.IArmorMaterial;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.SoundEvents;
-import net.minecraftforge.event.entity.living.LivingFallEvent;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.common.Mod;
+import com.brewingcoder.brewblocks.BrewBlocks;
+import com.brewingcoder.brewblocks.entity.PlayerBounceHandler;
+import com.brewingcoder.brewblocks.registry.ModItems;
+import net.minecraft.core.Holder;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ArmorItem;
+import net.minecraft.world.item.ArmorMaterial;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.phys.Vec3;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.neoforge.event.entity.living.LivingFallEvent;
 
-@Mod.EventBusSubscriber
 public class SlimeBounceBootsItem extends ArmorItem {
-
-    public SlimeBounceBootsItem(IArmorMaterial material, Properties properties) {
-        super(material, EquipmentSlotType.FEET, properties);
+    public SlimeBounceBootsItem(Holder<ArmorMaterial> material, Type type, Properties properties) {
+        super(material, type, properties);
     }
 
-    @SubscribeEvent
-    public static void onLivingFall(LivingFallEvent event){
+    @EventBusSubscriber(modid = BrewBlocks.MODID)
+    public static final class Events {
+        @SubscribeEvent
+        public static void onLivingFall(LivingFallEvent event) {
+            LivingEntity entity = event.getEntity();
+            if (!(entity instanceof Player player)) return;
 
-        LivingEntity entity = event.getEntityLiving();
-        if(entity == null || entity.getType() != EntityType.PLAYER) return;
+            ItemStack boots = player.getItemBySlot(EquipmentSlot.FEET);
+            if (boots.isEmpty() || boots.getItem() != ModItems.SLIME_BOUNCE_BOOTS.get()) return;
+            if (event.getDistance() <= 2) return;
 
-        ItemStack footArmor = entity.getItemStackFromSlot(EquipmentSlotType.FEET);
-        if (footArmor.getItem() != IItems.SLIME_BOUNCE_BOOTS) return;
+            if (player.isShiftKeyDown()) {
+                event.setDamageMultiplier(0);
+                player.fallDistance = 0;
+                return;
+            }
 
-        if(!entity.isSneaking() && event.getDistance() > 2) {
-            footArmor.attemptDamageItem(10,entity.world.rand,null);
+            boots.hurtAndBreak(10, player, EquipmentSlot.FEET);
             event.setDamageMultiplier(0);
-            entity.setMotion(entity.getMotion().x,entity.getMotion().y * -0.9,entity.getMotion().z);
-            entity.isAirBorne=true;
-            entity.onGround=false;
+
+            Vec3 m = player.getDeltaMovement();
+            player.setDeltaMovement(m.x, -m.y * 0.9, m.z);
+            player.hasImpulse = true;
+
             double f = 0.91d + 0.04d;
-            entity.setMotion(entity.getMotion().x / f,entity.getMotion().y,entity.getMotion().z / f);
+            Vec3 m2 = player.getDeltaMovement();
+            player.setDeltaMovement(m2.x / f, m2.y, m2.z / f);
+
             event.setCanceled(true);
-            entity.playSound(SoundEvents.ENTITY_SLIME_JUMP,1f,1f);
-            PlayerBounceHandler.addBounceHandler(entity,entity.getMotion().y);
-        }
-        if(entity.isSneaking() && event.getDistance() > 2) {
-            event.setDamageMultiplier(0);
-            entity.fallDistance =0;
+            player.level().playSound(null, player.getX(), player.getY(), player.getZ(),
+                    SoundEvents.SLIME_JUMP, player.getSoundSource(), 1f, 1f);
+            PlayerBounceHandler.addBounceHandler(player, player.getDeltaMovement().y);
         }
     }
+
+    @SuppressWarnings("unused")
+    private static void silenceUnusedImports(DamageSource ignored) {}
 }

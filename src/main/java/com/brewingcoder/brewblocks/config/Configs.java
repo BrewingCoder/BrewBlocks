@@ -1,29 +1,18 @@
 package com.brewingcoder.brewblocks.config;
 
-import com.brewingcoder.brewteamlib.config.Config;
-import com.brewingcoder.brewteamlib.config.IConfig;
-import net.minecraftforge.common.ForgeConfigSpec;
+import net.neoforged.neoforge.common.ModConfigSpec;
 import org.apache.commons.lang3.tuple.Pair;
 
-@SuppressWarnings("unused")
-public class Configs {
+public final class Configs {
     public static final WorldConfig WORLD;
-    public static final ForgeConfigSpec WORLD_SPEC;
-
-    public static void register() {
-        final String path = Config.createConfigDir("brewblocks");
-
-        Config.registerCommon(WORLD_SPEC,path + "/world_generation.toml");
-    }
-
-    static <T extends IConfig> T register(final T config) {
-        return config;
-    }
+    public static final ModConfigSpec COMMON_SPEC;
 
     static {
-        final Pair<WorldConfig,ForgeConfigSpec> worldGenPair = Config.get(WorldConfig::new);
-        WORLD = worldGenPair.getLeft();
-        WORLD_SPEC =worldGenPair.getRight();
+        Pair<WorldConfig, ModConfigSpec> pair =
+                new ModConfigSpec.Builder().configure(WorldConfig::new);
+        WORLD = pair.getLeft();
+        COMMON_SPEC = pair.getRight();
     }
 
+    private Configs() {}
 }

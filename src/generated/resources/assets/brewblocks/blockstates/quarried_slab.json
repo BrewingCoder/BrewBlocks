@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "brewblocks:block/quarried_slab"
+    },
+    "type=double": {
+      "model": "brewblocks:block/quarried"
+    },
+    "type=top": {
+      "model": "brewblocks:block/quarried_slab_top"
+    }
+  }
+}

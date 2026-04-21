@@ -1,8 +1,0 @@
-{
-  "parent": "block/outer_stairs",
-  "textures": {
-    "bottom": "brewblocks:block/quarried_cobble",
-    "top": "brewblocks:block/quarried_cobble",
-    "side": "brewblocks:block/quarried_cobble"
-  }
-}

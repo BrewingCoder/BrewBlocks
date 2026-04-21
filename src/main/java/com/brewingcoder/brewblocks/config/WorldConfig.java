@@ -1,78 +1,23 @@
 package com.brewingcoder.brewblocks.config;
 
-import net.minecraftforge.common.ForgeConfigSpec;
+import net.neoforged.neoforge.common.ModConfigSpec;
 
+public final class WorldConfig {
+    public final ModConfigSpec.BooleanValue doesStickyOreSpawnSlime;
+    public final ModConfigSpec.BooleanValue doesStickyOreChanceSpawnCreeper;
+    public final ModConfigSpec.IntValue stickyOreSpawnCreeperChance;
 
-@SuppressWarnings("unused")
-public class WorldConfig {
-
-    //Sticky Ore
-    public final ForgeConfigSpec.BooleanValue doStickyOre;
-    public final ForgeConfigSpec.IntValue StickyOreChance;
-    public final ForgeConfigSpec.IntValue StickyOreClusterSize;
-    public final ForgeConfigSpec.IntValue StickyOreMaxY;
-    public final ForgeConfigSpec.BooleanValue doesStickyOreSpawnSlime;
-    public final ForgeConfigSpec.BooleanValue doesStickyOreChanceSpawnCreeper;
-    public final ForgeConfigSpec.IntValue StickyOreSpawnCreeperChance;
-
-    public final ForgeConfigSpec.BooleanValue doAbyssal;
-    public final ForgeConfigSpec.IntValue AbyssalChance;
-    public final ForgeConfigSpec.IntValue AbyssalClusterSize;
-    public final ForgeConfigSpec.IntValue AbyssalMaxY;
-
-    public final ForgeConfigSpec.BooleanValue doQuarried;
-    public final ForgeConfigSpec.IntValue QuarriedChance;
-    public final ForgeConfigSpec.IntValue QuarriedClusterSize;
-    public final ForgeConfigSpec.IntValue QuarriedMaxY;
-
-    public final ForgeConfigSpec.BooleanValue doClay;
-    public final ForgeConfigSpec.IntValue ClayChance;
-    public final ForgeConfigSpec.IntValue ClayClusterSize;
-    public final ForgeConfigSpec.IntValue ClayMaxY;
-
-    public final ForgeConfigSpec.BooleanValue doWildFlaxCrop;
-    public final ForgeConfigSpec.IntValue WildFlaxCropChance;
-    public final ForgeConfigSpec.IntValue WildFlaxCropClusterSize;
-
-    public WorldConfig(ForgeConfigSpec.Builder builder){
-
-        builder.push("World_Generation");
-        builder.push("Sticky_Ore");
-        this.doStickyOre = builder.comment("Enables/Disables Sticky Ore World Generation.").define("stickyOreGeneration",true);
-        this.StickyOreChance = builder.comment("Chance that chunk Contains Sticky Ore Vein.").defineInRange("stickyOreGenChance",10,1,64);
-        this.StickyOreClusterSize = builder.comment("Size of Sticky Ore Vein.").defineInRange("stickyOreClusterSize",5,1,64);
-        this.StickyOreMaxY = builder.comment("Maximum Y value to generate Sticky Ore").defineInRange("stickyOreMaxY",63,1,100);
-        this.doesStickyOreSpawnSlime = builder.comment("Does Sticky ore Spawn Slimes when broken?").define("doesStickyOreSpawnSlime",true);
-        this.doesStickyOreChanceSpawnCreeper = builder.comment("Does Sticky Ore have a chance to spawn a Creeper?").define("doesStickyOreChanceSpawnCreeper",true);
-        this.StickyOreSpawnCreeperChance = builder.comment("Chance that a Creeper will spawn instead of a slime?").defineInRange("stickyOreSpawnCreeperChance",5,0,100);
-
-        builder.pop();
-        builder.push("Decoration_Abyssal");
-        this.doAbyssal = builder.comment("Enables/Disables Abyssal World Generation.").define("abyssalGeneration",true);
-        this.AbyssalChance = builder.comment("Chance that a chunk contains Abyssal vein.").defineInRange("abyssalGenChance",10,1,64);
-        this.AbyssalClusterSize = builder.comment("Size of the Abyssal Vein").defineInRange("abyssalClusterSize",25,1,100);
-        this.AbyssalMaxY = builder.comment("Maximum Y value to generate Abyssal").defineInRange("abyssalMaxY",63,1,100);
-
-        builder.pop();
-        builder.push("Decoration_Quarried");
-        this.doQuarried = builder.comment("Enables/Disables Quarried Stone World Generation.").define("quarriedGeneration",true);
-        this.QuarriedChance = builder.comment("Chance that a chunk contains a Quarried Vein.").defineInRange("quarriedGenChance",10,1,64);
-        this.QuarriedClusterSize =builder.comment("Size of the Quarried Stone Vein.").defineInRange("quarriedClusterSize",25,1,100);
-        this.QuarriedMaxY = builder.comment("Maximum Y value to generate Quarried Stone.").defineInRange("quarriedMaxY",63,1,100);
-
-        builder.pop();
-        builder.push("Clay_Generation");
-        this.doClay = builder.comment("Enables/Disables Clay Generation.").define("clayGeneration",true);
-        this.ClayChance = builder.comment("Chance that a chunk contains a Clay Vein.").defineInRange("clayChance",10,1,64);
-        this.ClayClusterSize=builder.comment("Average Size of Clay Cluster.").defineInRange("clayClusterSize",16,1,100);
-        this.ClayMaxY=builder.comment("Maximum Y value to generate Clay.").defineInRange("clayMaxY",62,1,100);
-
-        builder.pop();
-        builder.push("flax_crop");
-        this.doWildFlaxCrop = builder.comment("Generate Wild Flax Plants (Plains Only)").define("placeWildFlaxPlants",true);
-        this.WildFlaxCropChance = builder.comment("Chance of spawning a Wild Flax Crop").defineInRange("wildFlaxChance",2,1,64);
-        this.WildFlaxCropClusterSize = builder.comment("Average Clust Size of Wild Flax Crop").defineInRange("wildFlaxClusterSize",2,1,20);
-
+    public WorldConfig(ModConfigSpec.Builder builder) {
+        builder.push("sticky_ore");
+        doesStickyOreSpawnSlime = builder
+                .comment("Does Sticky Ore spawn a Slime when broken?")
+                .define("doesStickyOreSpawnSlime", true);
+        doesStickyOreChanceSpawnCreeper = builder
+                .comment("Does Sticky Ore have a chance to spawn a Creeper instead of a Slime?")
+                .define("doesStickyOreChanceSpawnCreeper", true);
+        stickyOreSpawnCreeperChance = builder
+                .comment("Percent chance that a Creeper will spawn instead of a Slime (0-100).")
+                .defineInRange("stickyOreSpawnCreeperChance", 5, 0, 100);
         builder.pop();
     }
 }

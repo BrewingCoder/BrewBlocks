@@ -1,8 +1,0 @@
-{
-  "parent": "block/slab_top",
-  "textures": {
-    "bottom": "brewblocks:block/quarried",
-    "top": "brewblocks:block/quarried",
-    "side": "brewblocks:block/quarried"
-  }
-}

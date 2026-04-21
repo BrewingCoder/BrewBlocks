@@ -1,8 +1,0 @@
-{
-  "parent": "block/inner_stairs",
-  "textures": {
-    "bottom": "brewblocks:block/quarried",
-    "top": "brewblocks:block/quarried",
-    "side": "brewblocks:block/quarried"
-  }
-}

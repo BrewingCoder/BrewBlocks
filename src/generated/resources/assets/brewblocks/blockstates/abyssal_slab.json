@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "brewblocks:block/abyssal_slab"
+    },
+    "type=double": {
+      "model": "brewblocks:block/abyssal"
+    },
+    "type=top": {
+      "model": "brewblocks:block/abyssal_slab_top"
+    }
+  }
+}
