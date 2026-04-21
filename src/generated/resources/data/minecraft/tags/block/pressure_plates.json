@@ -1,0 +1,14 @@
+{
+  "values": [
+    "brewblocks:abyssal_pressure_plate",
+    "brewblocks:abyssal_brick_pressure_plate",
+    "brewblocks:abyssal_brick_cracked_pressure_plate",
+    "brewblocks:abyssal_cobble_pressure_plate",
+    "brewblocks:abyssal_smooth_pressure_plate",
+    "brewblocks:quarried_pressure_plate",
+    "brewblocks:quarried_bricks_pressure_plate",
+    "brewblocks:quarried_bricks_cracked_pressure_plate",
+    "brewblocks:quarried_cobble_pressure_plate",
+    "brewblocks:quarried_smooth_pressure_plate"
+  ]
+}

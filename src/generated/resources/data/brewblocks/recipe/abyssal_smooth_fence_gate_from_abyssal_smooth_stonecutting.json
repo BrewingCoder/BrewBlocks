@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "brewblocks:abyssal_smooth"
+  },
+  "result": {
+    "count": 1,
+    "id": "brewblocks:abyssal_smooth_fence_gate"
+  }
+}

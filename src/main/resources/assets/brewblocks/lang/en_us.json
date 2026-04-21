@@ -27,6 +27,30 @@
   "block.brewblocks.abyssal_cobble_wall": "Abyssal Cobblestone Wall",
   "block.brewblocks.abyssal_smooth_wall": "Smooth Abyssal Wall",
 
+  "block.brewblocks.abyssal_fence": "Abyssal Fence",
+  "block.brewblocks.abyssal_brick_fence": "Abyssal Brick Fence",
+  "block.brewblocks.abyssal_brick_cracked_fence": "Cracked Abyssal Brick Fence",
+  "block.brewblocks.abyssal_cobble_fence": "Abyssal Cobblestone Fence",
+  "block.brewblocks.abyssal_smooth_fence": "Smooth Abyssal Fence",
+
+  "block.brewblocks.abyssal_fence_gate": "Abyssal Fence Gate",
+  "block.brewblocks.abyssal_brick_fence_gate": "Abyssal Brick Fence Gate",
+  "block.brewblocks.abyssal_brick_cracked_fence_gate": "Cracked Abyssal Brick Fence Gate",
+  "block.brewblocks.abyssal_cobble_fence_gate": "Abyssal Cobblestone Fence Gate",
+  "block.brewblocks.abyssal_smooth_fence_gate": "Smooth Abyssal Fence Gate",
+
+  "block.brewblocks.abyssal_button": "Abyssal Button",
+  "block.brewblocks.abyssal_brick_button": "Abyssal Brick Button",
+  "block.brewblocks.abyssal_brick_cracked_button": "Cracked Abyssal Brick Button",
+  "block.brewblocks.abyssal_cobble_button": "Abyssal Cobblestone Button",
+  "block.brewblocks.abyssal_smooth_button": "Smooth Abyssal Button",
+
+  "block.brewblocks.abyssal_pressure_plate": "Abyssal Pressure Plate",
+  "block.brewblocks.abyssal_brick_pressure_plate": "Abyssal Brick Pressure Plate",
+  "block.brewblocks.abyssal_brick_cracked_pressure_plate": "Cracked Abyssal Brick Pressure Plate",
+  "block.brewblocks.abyssal_cobble_pressure_plate": "Abyssal Cobblestone Pressure Plate",
+  "block.brewblocks.abyssal_smooth_pressure_plate": "Smooth Abyssal Pressure Plate",
+
   "block.brewblocks.quarried": "Quarried Stone",
   "block.brewblocks.quarried_bricks": "Quarried Stone Bricks",
   "block.brewblocks.quarried_bricks_cracked": "Cracked Quarried Stone Bricks",
@@ -50,6 +74,30 @@
   "block.brewblocks.quarried_bricks_cracked_wall": "Cracked Quarried Stone Brick Wall",
   "block.brewblocks.quarried_cobble_wall": "Quarried Cobblestone Wall",
   "block.brewblocks.quarried_smooth_wall": "Smooth Quarried Stone Wall",
+
+  "block.brewblocks.quarried_fence": "Quarried Stone Fence",
+  "block.brewblocks.quarried_bricks_fence": "Quarried Stone Brick Fence",
+  "block.brewblocks.quarried_bricks_cracked_fence": "Cracked Quarried Stone Brick Fence",
+  "block.brewblocks.quarried_cobble_fence": "Quarried Cobblestone Fence",
+  "block.brewblocks.quarried_smooth_fence": "Smooth Quarried Stone Fence",
+
+  "block.brewblocks.quarried_fence_gate": "Quarried Stone Fence Gate",
+  "block.brewblocks.quarried_bricks_fence_gate": "Quarried Stone Brick Fence Gate",
+  "block.brewblocks.quarried_bricks_cracked_fence_gate": "Cracked Quarried Stone Brick Fence Gate",
+  "block.brewblocks.quarried_cobble_fence_gate": "Quarried Cobblestone Fence Gate",
+  "block.brewblocks.quarried_smooth_fence_gate": "Smooth Quarried Stone Fence Gate",
+
+  "block.brewblocks.quarried_button": "Quarried Stone Button",
+  "block.brewblocks.quarried_bricks_button": "Quarried Stone Brick Button",
+  "block.brewblocks.quarried_bricks_cracked_button": "Cracked Quarried Stone Brick Button",
+  "block.brewblocks.quarried_cobble_button": "Quarried Cobblestone Button",
+  "block.brewblocks.quarried_smooth_button": "Smooth Quarried Stone Button",
+
+  "block.brewblocks.quarried_pressure_plate": "Quarried Stone Pressure Plate",
+  "block.brewblocks.quarried_bricks_pressure_plate": "Quarried Stone Brick Pressure Plate",
+  "block.brewblocks.quarried_bricks_cracked_pressure_plate": "Cracked Quarried Stone Brick Pressure Plate",
+  "block.brewblocks.quarried_cobble_pressure_plate": "Quarried Cobblestone Pressure Plate",
+  "block.brewblocks.quarried_smooth_pressure_plate": "Smooth Quarried Stone Pressure Plate",
 
   "item.brewblocks.goggles": "Night Vision Goggles",
   "item.brewblocks.slime_bounce_boots": "Slime Bounce Boots"

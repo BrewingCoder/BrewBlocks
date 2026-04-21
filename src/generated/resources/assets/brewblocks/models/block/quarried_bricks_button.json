@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button",
+  "textures": {
+    "texture": "brewblocks:block/quarried_bricks"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_quarried": {
+      "conditions": {
+        "items": [
+          {
+            "items": "brewblocks:quarried"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "brewblocks:quarried_pressure_plate_from_quarried_stonecutting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_quarried"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "brewblocks:quarried_pressure_plate_from_quarried_stonecutting"
+    ]
+  }
+}

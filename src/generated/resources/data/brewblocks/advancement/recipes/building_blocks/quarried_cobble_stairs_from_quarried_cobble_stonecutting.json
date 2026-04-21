@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_quarried_cobble": {
+      "conditions": {
+        "items": [
+          {
+            "items": "brewblocks:quarried_cobble"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "brewblocks:quarried_cobble_stairs_from_quarried_cobble_stonecutting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_quarried_cobble"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "brewblocks:quarried_cobble_stairs_from_quarried_cobble_stonecutting"
+    ]
+  }
+}

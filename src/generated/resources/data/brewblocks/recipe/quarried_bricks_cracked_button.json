@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "ingredients": [
+    {
+      "item": "brewblocks:quarried_bricks_cracked"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "brewblocks:quarried_bricks_cracked_button"
+  }
+}

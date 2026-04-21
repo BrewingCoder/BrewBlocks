@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_abyssal": {
+      "conditions": {
+        "items": [
+          {
+            "items": "brewblocks:abyssal"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "brewblocks:abyssal_fence_from_abyssal_stonecutting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_abyssal"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "brewblocks:abyssal_fence_from_abyssal_stonecutting"
+    ]
+  }
+}

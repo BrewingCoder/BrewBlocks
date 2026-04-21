@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "brewblocks:abyssal_bricks_cracked"
+  },
+  "result": {
+    "count": 1,
+    "id": "brewblocks:abyssal_brick_cracked_fence_gate"
+  }
+}

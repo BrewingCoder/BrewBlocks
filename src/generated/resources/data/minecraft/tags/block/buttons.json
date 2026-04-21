@@ -1,0 +1,14 @@
+{
+  "values": [
+    "brewblocks:abyssal_button",
+    "brewblocks:abyssal_brick_button",
+    "brewblocks:abyssal_brick_cracked_button",
+    "brewblocks:abyssal_cobble_button",
+    "brewblocks:abyssal_smooth_button",
+    "brewblocks:quarried_button",
+    "brewblocks:quarried_bricks_button",
+    "brewblocks:quarried_bricks_cracked_button",
+    "brewblocks:quarried_cobble_button",
+    "brewblocks:quarried_smooth_button"
+  ]
+}

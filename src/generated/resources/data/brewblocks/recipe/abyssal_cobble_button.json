@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "ingredients": [
+    {
+      "item": "brewblocks:abyssal_cobble"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "brewblocks:abyssal_cobble_button"
+  }
+}

@@ -32,5 +32,6 @@ public final class DataEvents {
         gen.addProvider(event.includeServer(),
                 new ModItemTagsProvider(output, registries, blockTags.contentsGetter(), efh));
         gen.addProvider(event.includeServer(), new ModLootTableProvider(output, registries));
+        gen.addProvider(event.includeServer(), new ModRecipeProvider(output, registries));
     }
 }

@@ -1,5 +1,10 @@
-// 1.21.1	2026-04-20T21:15:02.932769	Tags for minecraft:block mod id brewblocks
+// 1.21.1	2026-04-20T21:41:47.231753	Tags for minecraft:block mod id brewblocks
 04bc33ddc4a80ecefd27316515520ce42e2ce3a4 data/c/tags/block/ores.json
 04bc33ddc4a80ecefd27316515520ce42e2ce3a4 data/c/tags/block/ores_in_ground/stone.json
-23c381db7ebe4e55f25c93affb9a71dd20ec0c1b data/minecraft/tags/block/mineable/pickaxe.json
-23c381db7ebe4e55f25c93affb9a71dd20ec0c1b data/minecraft/tags/block/needs_stone_tool.json
+21158340617a58007b90af0fa219a06292cf70cb data/minecraft/tags/block/buttons.json
+bfa9f76d24ec905529cca651e3c8df2b86615f93 data/minecraft/tags/block/fence_gates.json
+8449cc25ed80a314215b1c6688ee00ef131d0cfd data/minecraft/tags/block/fences.json
+fcb7a117c2c3c425a842777e56567fbbd76215ad data/minecraft/tags/block/mineable/pickaxe.json
+fcb7a117c2c3c425a842777e56567fbbd76215ad data/minecraft/tags/block/needs_stone_tool.json
+97e31c633f6e3291229961af909f3bd03d216fab data/minecraft/tags/block/pressure_plates.json
+2419ea570e617a98f28c937081576c6bdd92cde0 data/minecraft/tags/block/walls.json

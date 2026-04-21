@@ -1,0 +1,14 @@
+{
+  "values": [
+    "brewblocks:abyssal_fence",
+    "brewblocks:abyssal_brick_fence",
+    "brewblocks:abyssal_brick_cracked_fence",
+    "brewblocks:abyssal_cobble_fence",
+    "brewblocks:abyssal_smooth_fence",
+    "brewblocks:quarried_fence",
+    "brewblocks:quarried_bricks_fence",
+    "brewblocks:quarried_bricks_cracked_fence",
+    "brewblocks:quarried_cobble_fence",
+    "brewblocks:quarried_smooth_fence"
+  ]
+}
